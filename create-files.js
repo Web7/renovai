@@ -54,7 +54,7 @@ const dataHeadPug = 'mixin head(data)\n' +
 	'\tmeta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes")\n' +
 	'\tmeta(name="description" content=data && data.head && data.head.description || \'\')\n' +
 	'\tlink(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")\n' +
-	'\ttitle= (data && data.head && data.head.title || \'\') + \'Polish Hair Academy\'\n' +
+	'\ttitle= (data && data.head && data.head.title || \'\') + \'\'\n' +
 	'\tlink(rel="icon" type="image/x-icon" href="/favicon.ico")\n';
 
 const configPages = 'module.exports.pages =  {\n' +
