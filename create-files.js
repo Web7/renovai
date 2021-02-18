@@ -12,8 +12,7 @@ const dataIndexJs = 'import html from \'./components/pages/index.pug\';\n' +
 	'\n' +
 	'import \'./js/common.js\';';
 
-const dataIndexSass = '$breadcrumb-divider: quote(">")\n' +
-	'$secondary: #ededed\n' +
+const dataIndexSass = '@import \'variables\'\n' +
 	'\n' +
 	'@import \'~bootstrap/scss/bootstrap\'\n' +
 	'@import \'~slick-carousel/slick/slick.css\'\n' +
@@ -26,8 +25,7 @@ const dataIndexSass = '$breadcrumb-divider: quote(">")\n' +
 	'@import \'breadcrumb\'\n' +
 	'\n' +
 	'@import \'ui\'\n' +
-	'@import \'icons\'\n' +
-	'';
+	'@import \'icons\'';
 
 const dataIndexJson = '{}';
 
@@ -141,6 +139,9 @@ const files = [
 	{
 		name: './.gitignore',
 		data: gitIgnore
+	},
+	{
+		name: './src/sass/variables.scss'
 	}
 ];
 
@@ -149,4 +150,9 @@ for (const file of files) {
 		console.log(error);
 	});
 }
+
+fs.copyFile('./node_modules/bootstrap/scss/_variables.scss', './src/sass/variables.scss', (err) => {
+	if (err) throw err;
+	console.log('_variables.scss was copied to variables.scss');
+});
 
