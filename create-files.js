@@ -25,8 +25,8 @@ const dataIndexSass = '$breadcrumb-divider: quote(">")\n' +
 	'@import \'footer\'\n' +
 	'@import \'breadcrumb\'\n' +
 	'\n' +
-	'@import \'ui\'' +
-	'@import \'icons\'' +
+	'@import \'ui\'\n' +
+	'@import \'icons\'\n' +
 	'';
 
 const dataIndexJson = '{}';
