@@ -6,11 +6,27 @@
 	} else {
 		factory(jQuery || Zepto);
 	}
-}(function($){
+}(function ($) {
 	'use strict';
 
 	$.fn.exists = function () {
 		return this.length !== 0;
 	};
+
+
+	$(function () {
+		const $dropdown = $('.dropdown');
+
+		if ($dropdown.exists()) {
+			$dropdown.hover(
+				function () {
+					const $this = $(this);
+					$this.addClass('show');
+					$this.find('[data-toggle="dropdown"]').attr('aria-expanded', true);
+					$this.find('.dropdown-menu').addClass('show');
+				}
+			)
+		}
+	});
 
 }, window.jQuery, window.Zepto));
