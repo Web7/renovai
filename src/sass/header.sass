@@ -19,11 +19,15 @@ header
 			color: #ffffff
 			font-size: 18px
 			line-height: 22px
-			margin-right: 32px
 			&.active
 				font-family: 'moderat-bold'
 		.nav
+			&-item
+				box-sizing: content-box
+				min-width: 99px
+				padding-right: 32px
 			&-link
+				display: inline-block
 				padding: 5px 0 3px 0
 				border-bottom: 2px solid transparent
 				transition: border-bottom-color linear 500ms
