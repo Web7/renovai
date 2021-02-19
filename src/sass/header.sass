@@ -1,7 +1,14 @@
 header
 	height: 918px
 .header
-	&-menu
+	&-logo
+		display: inline-block
+		width: 120px
+		height: 26px
+		background: url(../images/logo.svg)
+		margin-right: 40px
+		margin-top: -6px
+	&-nav
 		height: 54px
 		display: flex
 		align-items: center
@@ -15,3 +22,32 @@ header
 			margin-right: 32px
 			&.active
 				font-family: 'moderat-bold'
+		.nav
+			&-link
+				padding: 5px 0 3px 0
+				border-bottom: 2px solid transparent
+				transition: border-bottom-color linear 500ms
+				&:hover
+					border-bottom-color: #00B9EB
+					transition: border-bottom-color linear 300ms
+		.dropdown
+			&-menu
+				border-radius: 20px
+				padding: 0
+				min-width: 280px
+				top: 10px !important
+			&-item
+				font-size: 15px
+				line-height: 18px
+				font-family: 'moderat-medium'
+				padding: 12px 16px
+				color: #0D0D30
+				transition: color linear 500ms, background-color linear 500ms
+				&:hover
+					background-color: #00B9EB
+					color: #ffffff
+					transition: color linear 300ms, background-color linear 300ms
+				&:first-child
+					border-radius: 18px 18px 0 0
+				&:last-child
+					border-radius: 0 0 18px 18px

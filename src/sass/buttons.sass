@@ -1,0 +1,15 @@
+.btn
+	transition: background-color linear 500ms, border-right-color linear 500ms, border-left-color linear 500ms, border-top-color linear 500ms, border-bottom-color linear 500ms, color linear 500ms
+	&:hover
+		transition: background-color linear 300ms, border-right-color linear 300ms, border-left-color linear 300ms, border-top-color linear 300ms, border-bottom-color linear 300ms, color linear 300ms
+	&.disabled,
+	&:disabled
+		opacity: 1
+		background-color: #E0E0E0
+		border-color: #E0E0E0
+		color: #0D0D30
+	&-light
+		&:hover
+			background-color: #0D0D30
+			border-color: #0D0D30
+			color: #ffffff

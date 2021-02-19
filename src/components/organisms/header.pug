@@ -1,10 +1,23 @@
-header.bg-navy
+header.bg-navy.pt-3
 	.container
-		a.header-logo(href="#")
-		menu.header-menu
-			a.active(href="#") Home
-			a(href="#") Resources
-			a(href="#") Solutions
-			a(href="#") Company
-			a(href="#") Contact Us
-		a.btn.btn-light(href="#") Book a Demo
+		.row.align-items-center
+			a.header-logo(href="#")
+			.d-inline-block
+				ul.nav.header-nav
+					li.nav-item
+						a.nav-link.active(href="#") Home
+					li.nav-item.dropdown
+						a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Resources
+						.dropdown-menu
+							a.dropdown-item(href="#") Blog
+							a.dropdown-item(href="#") White Papers
+							a.dropdown-item(href="#") Data Sheets
+							a.dropdown-item(href="#") Case Studies
+							a.dropdown-item(href="#") Label
+					li.nav-item
+						a.nav-link(href="#") Solutions
+					li.nav-item
+						a.nav-link(href="#") Company
+					li.nav-item
+						a.nav-link(href="#") Contact Us
+			a.btn.btn-light(href="#") Book a Demo
