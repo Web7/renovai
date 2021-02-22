@@ -1,11 +1,12 @@
 mixin RequestDemo()
-	section.bg-request-demo
-		.container
+	section.bg-request-demo.d-flex
+		.container.mt-auto
 			.row.align-items-start
 				.offset-1
 				.col-5.align-content-start
-					.text-center
+					.text-center.d-inline-block.mt-6
 						p.text-title Request a Demo
 						a.btn.btn-pink(href="#") Book a Demo
-				.col-5.align-content-end
-					img(src="images/request-demo-phone.png")
+				.col-5
+					.text-right
+						img(src="images/request-demo-phone.png")
