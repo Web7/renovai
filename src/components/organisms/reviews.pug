@@ -1,0 +1,31 @@
+mixin Reviews()
+	section
+		.container.text-center.mt-6.mb-9.pb-10
+			h2.h-lg.text-secondary.mb-0 Don’t just take our word for it
+			p.text-small-subtext See how our customers found rapid success using renovai’s solutions
+	section.bg-navy
+		.container
+			.row
+				.col-8.offset-2
+					.carousel.slide.carousel-reviews#carouselReviews(data-ride="carousel")
+						.carousel-inner.text-white
+							.carousel-item.active
+								.text-center.position-relative.review-item
+									.review-img(style="background-image: url(images/review-item.jpg)")
+									p.mb-5
+										b Adam McWhinney /
+										span  Chief Experience Officer & Co Founder at Temple & Webster
+									.text-review-content
+										p “Adding renovai’s mood board to our product pages had an immediate impact to shopper engagement and overall spending! It enables up sells in a very intuitive non – pushy way as part of a great user experience.”
+							.carousel-item
+								.text-center.position-relative.review-item
+									.review-img(style="background-image: url(images/review-item.jpg)")
+									p.mb-5
+										b Adam McWhinney /
+										span  Chief Experience Officer & Co Founder at Temple & Webster
+									.text-review-content
+										p “Adding renovai’s mood board to our product pages had an immediate impact to shopper engagement and overall spending! It enables up sells in a very intuitive non – pushy way as part of a great user experience.”
+						.carousel-control-prev(href="#carouselReviews" role="button" data-slide="prev")
+							span.carousel-control-prev-icon
+						.carousel-control-next(href="#carouselReviews" role="button" data-slide="next")
+							span.carousel-control-next-icon
