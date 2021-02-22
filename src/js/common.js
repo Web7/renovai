@@ -15,18 +15,7 @@
 
 
 	$(function () {
-		const $dropdown = $('.dropdown');
 
-		if ($dropdown.exists()) {
-			$dropdown.hover(
-				function () {
-					const $this = $(this);
-					$this.addClass('show');
-					$this.find('[data-toggle="dropdown"]').attr('aria-expanded', true);
-					$this.find('.dropdown-menu').addClass('show');
-				}
-			)
-		}
 	});
 
 }, window.jQuery, window.Zepto));
