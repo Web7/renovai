@@ -1,6 +1,8 @@
 .btn
 	transition: background-color linear 500ms, border-right-color linear 500ms, border-left-color linear 500ms, border-top-color linear 500ms, border-bottom-color linear 500ms, color linear 500ms
 
+	&:focus
+		box-shadow: none
 	&:hover
 		transition: background-color linear 300ms, border-right-color linear 300ms, border-left-color linear 300ms, border-top-color linear 300ms, border-bottom-color linear 300ms, color linear 300ms
 
@@ -9,16 +11,16 @@
 		opacity: 1
 		background-color: #E0E0E0
 		border-color: #E0E0E0
-		color: #0D0D30
+		color: $primary
 
 	&-light
 		.i
 			&-right-arrow
 				background-image: url(../images/icon-right-arrow-navy.svg)
 		&:hover
-			background-color: #0D0D30
-			border-color: #0D0D30
-			color: #ffffff
+			background-color: $primary
+			border-color: $primary
+			color: $white
 
 			.i
 				&-right-arrow
@@ -26,9 +28,9 @@
 
 	&-secondary
 		&:hover
-			background-color: #0D0D30
-			border-color: #0D0D30
-			color: #ffffff
+			background-color: $primary
+			border-color: $primary
+			color: $white
 			.i
 				&-right-arrow
 					background-image: url(../images/icon-right-arrow-white.svg)
@@ -37,9 +39,12 @@
 			&-right-arrow
 				background-image: url(../images/icon-right-arrow-navy.svg)
 		&:focus
-			background-color: #ffffff
-			border-color: #00B9EB
-			background-image: url(../images/icon-right-arrow.svg)
+			background-color: $white
+			border-color: $secondary
+			color: $secondary
+			.i
+				&-right-arrow
+					background-image: url(../images/icon-right-arrow.svg)
 
 	&-icon
 		display: inline-flex
