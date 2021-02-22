@@ -1,8 +1,9 @@
 .btn
 	transition: background-color linear 500ms, border-right-color linear 500ms, border-left-color linear 500ms, border-top-color linear 500ms, border-bottom-color linear 500ms, color linear 500ms
 
-	&:focus
-		box-shadow: none
+	&:focus,
+	&:active
+		box-shadow: none !important
 	&:hover
 		transition: background-color linear 300ms, border-right-color linear 300ms, border-left-color linear 300ms, border-top-color linear 300ms, border-bottom-color linear 300ms, color linear 300ms
 
@@ -12,6 +13,18 @@
 		background-color: #E0E0E0
 		border-color: #E0E0E0
 		color: $primary
+
+	&-pink
+		color: $white
+		&:hover
+			background-color: $pink1
+			border-color: $pink1
+		&:not(.disabled):not(:disabled)
+			&:focus,
+			&:active
+				background-color: $white
+				border-color: $pink
+				color: $pink
 
 	&-light
 		.i
@@ -38,13 +51,15 @@
 		.i
 			&-right-arrow
 				background-image: url(../images/icon-right-arrow-navy.svg)
-		&:focus
-			background-color: $white
-			border-color: $secondary
-			color: $secondary
-			.i
-				&-right-arrow
-					background-image: url(../images/icon-right-arrow.svg)
+		&:not(.disabled):not(:disabled)
+			&:focus,
+			&:active
+				background-color: $white
+				border-color: $secondary
+				color: $secondary
+				.i
+					&-right-arrow
+						background-image: url(../images/icon-right-arrow.svg)
 
 	&-icon
 		display: inline-flex

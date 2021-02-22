@@ -34,7 +34,7 @@ $grays: map-merge(
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$pink:    #FF7882 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
@@ -92,7 +92,7 @@ $theme-colors: map-merge(
 						"light": $light,
 						"dark": $dark,
 						"navy": $navy,
-						"pink": $pink1
+						"pink": $pink
 				),
 				$theme-colors
 );
@@ -438,10 +438,10 @@ $btn-padding-x-sm: $input-btn-padding-x-sm !default;
 $btn-font-size-sm: $input-btn-font-size-sm !default;
 $btn-line-height-sm: $input-btn-line-height-sm !default;
 
-$btn-padding-y-lg: $input-btn-padding-y-lg !default;
-$btn-padding-x-lg: $input-btn-padding-x-lg !default;
-$btn-font-size-lg: $input-btn-font-size-lg !default;
-$btn-line-height-lg: $input-btn-line-height-lg !default;
+$btn-padding-y-lg: 24px !default;
+$btn-padding-x-lg: 48px !default;
+$btn-font-size-lg: 24px !default;
+$btn-line-height-lg: 20px !default;
 
 $btn-border-width: $input-btn-border-width !default;
 
@@ -458,7 +458,7 @@ $btn-block-spacing-y: .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: 100px !default;
-$btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-lg: 100px !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 
 $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
