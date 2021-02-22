@@ -15,6 +15,15 @@ const configureCopy = () => {
 module.exports = {
 	mode: 'development',
 
+	entry: {
+		index: './src/index.js'
+	},
+
+	output: {
+		filename: 'js/index.js',
+		path: path.resolve(__dirname, 'dist')
+	},
+
 	plugins: [
 		new CopyWebpackPlugin({
 			patterns: configureCopy()
