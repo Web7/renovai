@@ -2,6 +2,7 @@ header
 	height: 84px
 	position: relative
 	z-index: 10
+	margin-bottom: -84px
 .header
 	&-logo
 		display: inline-block
@@ -23,6 +24,8 @@ header
 			line-height: 22px
 			&.active
 				font-family: 'moderat-bold'
+		.btn-fixed
+			display: none
 		.nav
 			&-item
 				box-sizing: content-box
@@ -67,3 +70,16 @@ header
 					border-radius: 18px 18px 0 0
 				&:last-child
 					border-radius: 0 0 18px 18px
+.sm-toggle-menu
+	&.position-fixed
+		background-color: $white
+		.header
+			&-nav
+				a
+					color: $primary
+
+				.btn
+					&-static
+						display: none
+					&-fixed
+						display: block

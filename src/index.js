@@ -9,3 +9,4 @@ import slick from 'slick-carousel';
 import L from 'leaflet';
 
 import './js/common.js';
+import './js/scroll-toggle-menu.js';
