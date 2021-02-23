@@ -76,6 +76,8 @@ header
 			box-shadow: none !important
 		&-fixed
 			background-color: $white
+			animation: showMenu 300ms linear reverse infinite
+			animation-iteration-count: 1
 			.header
 				&-nav
 					a
@@ -86,3 +88,7 @@ header
 							display: none
 						&-fixed
 							display: block
+
+@keyframes showMenu
+	100%
+		transform: translateY(-40px)
