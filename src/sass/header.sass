@@ -71,15 +71,18 @@ header
 				&:last-child
 					border-radius: 0 0 18px 18px
 .sm-toggle-menu
-	&.position-fixed
-		background-color: $white
-		.header
-			&-nav
-				a
-					color: $primary
+	&.position
+		&-static
+			box-shadow: none !important
+		&-fixed
+			background-color: $white
+			.header
+				&-nav
+					a
+						color: $primary
 
-				.btn
-					&-static
-						display: none
-					&-fixed
-						display: block
+					.btn
+						&-static
+							display: none
+						&-fixed
+							display: block
