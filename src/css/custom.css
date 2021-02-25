@@ -25,6 +25,19 @@
 }
 
 @font-face {
+    font-family: 'moderat-mono-regular';
+    src: url('../fonts/moderat-mono-regular.eot');
+    src: local('moderat mono regular'), local('moderat-mono-regular'),
+    url('../fonts/moderat-mono-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/moderat-mono-regular.woff2') format('woff2'),
+    url('../fonts/moderat-mono-regular.woff') format('woff'),
+    url('../fonts/moderat-mono-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'moderat-thin';
     src: url('../fonts/moderat-thin.eot');
     src: local('moderat thin'), local('moderat-thin'),
