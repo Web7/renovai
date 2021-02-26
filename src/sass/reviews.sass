@@ -32,8 +32,8 @@
 		.review
 			&-img
 				display: inline-block
-				width: 219px
-				height: 219px
+				width: 102px
+				height: 102px
 				border-radius: 100%
 				background: #ffffff no-repeat center center
 				background-size: cover
@@ -41,9 +41,44 @@
 		b
 			font-family: 'moderat-bold'
 		.text-review-content
-			font-family: 'moderat-mono-regular'
-			font-size: 25px
-			line-height: 40px
+
+
 
 .bg-reviews
 	background: $primary url(../images/bg-reviews.jpg) no-repeat center center
+	height: 404px
+
+.reviews
+	.h2
+		font-size: 30px
+		line-height: 45px
+		font-family: 'moderat-bold'
+		font-weight: normal
+	.h5
+		font-size: 18px
+		line-height: 30px
+		font-family: 'moderat-light'
+		font-weight: normal
+	.text-review-content
+		font-size: 11px
+		line-height: 16px
+		font-family: 'moderat-mono-regular'
+
+@media (min-width: 768px)
+	.carousel
+		&-reviews
+			.review
+				&-img
+					width: 219px
+					height: 219px
+
+	.reviews
+		.h2
+			font-size: 30px
+			line-height: 45px
+		.h5
+			font-size: 18px
+			line-height: 30px
+		.text-review-content
+			font-size: 25px
+			line-height: 40px
