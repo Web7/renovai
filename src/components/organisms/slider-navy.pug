@@ -1,5 +1,5 @@
 mixin SliderNavy()
-	section.pt-5.pb-3.position-relative.bg-primary.slider-navy
+	section.pt-3.pt-md-5.pb-3.position-relative.bg-primary.slider-navy
 		.container
 			.carousel.slide#carouselNavy(data-ride="false" data-interval="false" data-wrap="false")
 				ol.carousel-indicators
@@ -10,11 +10,13 @@ mixin SliderNavy()
 					li(data-target="#carouselNavy" data-slide-to="4")
 				.carousel-inner.text-white
 					.carousel-item.active
-						video.video-carousel.w-100
-							source(src="video/personalized-complete-the-look.mp4")
-						.row
-							.col-10
-								h4.h2 Personalized Complete The Look
+						.row.text-center.text-md-left
+							.col-12.order-1.order-md-0.mb-5.mb-md-0
+								video.video-carousel.w-100
+									source(src="video/personalized-complete-the-look.mp4")
+							.col-10.order-0.order-md-1.offset-1.offset-md-0
+								h4.h2.mb-3 Personalized Complete The Look
+							.col-12.col-md-10.order-2
 								.h5.mb-2 2D inspiration images enhancing product focused display offering the best targeted assorted products and color palettes.
 								a.btn.btn-pink.btn-icon(href="#")
 									span Explore
@@ -55,7 +57,7 @@ mixin SliderNavy()
 								a.btn.btn-pink.btn-icon(href="#")
 									span Explore
 									i.i.i-sm.i-right-arrow
-				.carousel-control-prev(href="#carouselNavy" role="button" data-slide="prev")
+				.carousel-control-prev.d-none.d-md-block(href="#carouselNavy" role="button" data-slide="prev")
 					span.carousel-control-prev-icon
-				.carousel-control-next(href="#carouselNavy" role="button" data-slide="next")
+				.carousel-control-next.d-none.d-md-block(href="#carouselNavy" role="button" data-slide="next")
 					span.carousel-control-next-icon
