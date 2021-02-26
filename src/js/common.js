@@ -13,31 +13,30 @@
 		return this.length !== 0;
 	};
 
+	var $carouselNavy;
 	var counterSectionRcsarTop;
 	var windowHeight;
 	var show = false;
 
-	$(function () {
-		var $carouselNavy = $('#carouselNavy');
-		var $counterSectionRcsar = $('.counter-section-rcsar');
-
-		if ($counterSectionRcsar.exists()) {
-			counterSectionRcsarTop = $counterSectionRcsar.offset().top;
-			windowHeight = window.innerHeight;
-			show = true;
-		}
-
+	var startVideo = function() {
 		if ($carouselNavy.exists()) {
 			var $carouselItem = $carouselNavy.find('.carousel-item.active');
 			var $videoCarousel = $carouselItem.find('.video-carousel');
+			var videoPromise = $videoCarousel[0].play();
 
-			$videoCarousel[0].play();
+			if (videoPromise !== undefined) {
+				videoPromise.then( e => {
+					console.log(e);
+				}).catch( e => {
+					console.log(e);
+				})
+			}
 
-			$videoCarousel[0].onended = function(){
+			$videoCarousel[0].onended = function () {
 				$carouselNavy.carousel('next');
 			};
 
-			$carouselNavy.on('slid.bs.carousel', function(e){
+			$carouselNavy.on('slid.bs.carousel', function (e) {
 				if ($videoCarousel.exists()) {
 					$videoCarousel[0].pause();
 				}
@@ -49,20 +48,36 @@
 				}
 			})
 		}
+	};
+
+	$(function () {
+		var $counterSectionRcsar = $('.counter-section-rcsar');
+		$carouselNavy = $('#carouselNavy');
+
+		if ($counterSectionRcsar.exists()) {
+			counterSectionRcsarTop = $counterSectionRcsar.offset().top;
+			windowHeight = window.innerHeight;
+			show = true;
+		}
+
+		setTimeout(function () {
+			startVideo();
+		}, 7000);
+
 	});
 
-	$(window).on('scroll', function(){
-		if(show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)){
+	$(window).on('scroll', function () {
+		if (show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)) {
 			var $dataCounter = $('[data-counter]');
 			if ($dataCounter.exists()) {
-				$dataCounter.each(function(){
+				$dataCounter.each(function () {
 					var $this = $(this);
 					$this.prop('counter', 0).animate({
 						counter: $this.attr('data-counter')
 					}, {
 						duration: 1000,
 						easing: 'swing',
-						step: function(now) {
+						step: function (now) {
 							$this.text(this.counter.toFixed(0) + '%')
 						}
 					})
