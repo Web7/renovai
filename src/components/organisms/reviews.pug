@@ -7,23 +7,23 @@ mixin Reviews()
 	section.bg-reviews.reviews
 		.container
 			.row
-				.col-10.offset-1.col-md-8.offset-md-2
+				.col-10.offset-1.col-md-8.offset-md-2.col-xl-10.offset-xl-1
 					.carousel.slide.carousel-reviews#carouselReviews(data-ride="carousel")
 						.carousel-inner.text-white
 							.carousel-item.active
-								.text-center.position-relative.review-item
-									.review-img(style="background-image: url(images/review-item.jpg)")
+								.text-center.position-relative.review-item.d-flex.flex-column.align-items-center.h-100
+									.review-img.mb-2(style="background-image: url(images/review-item.jpg)")
 									div
 										img(src="images/temple-webster-logo.svg" alt="" title="" width="100")
-									p.mb-5
+									p
 										b Adam McWhinney /
 										span  Chief Experience Officer & Co Founder at Temple & Webster
 									.text-review-content
 										p “Adding renovai’s mood board to our product pages had an immediate impact to shopper engagement and overall spending! It enables up sells in a very intuitive non – pushy way as part of a great user experience.”
 							.carousel-item
-								.text-center.position-relative.review-item
-									.review-img(style="background-image: url(images/review-item.jpg)")
-									p.mb-5
+								.text-center.position-relative.review-item.d-flex.flex-column.align-items-center.h-100
+									.review-img.mb-2(style="background-image: url(images/review-item.jpg)")
+									p
 										b Adam McWhinney /
 										span  Chief Experience Officer & Co Founder at Temple & Webster
 									.text-review-content

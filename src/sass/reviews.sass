@@ -1,13 +1,13 @@
 .carousel
 	&-reviews
-		height: calc(472px + 110px)
-		font-size: 18px
-		line-height: 34px
+		height: calc(418px + 51px)
+		font-size: 12px
+		line-height: 20px
 		font-family: 'moderat-regular'
-		margin-top: -110px
+		margin-top: -65px
 		.carousel
 			&-item
-				height: 472px
+				height: calc(418px + 51px)
 			&-control
 				&-prev
 					top: 220px
@@ -31,6 +31,7 @@
 							background-image: url(../images/icon-next-review-hover.svg)
 		.review
 			&-img
+				margin-top: 14px
 				display: inline-block
 				width: 102px
 				height: 102px
@@ -38,9 +39,11 @@
 				background: #ffffff no-repeat center center
 				background-size: cover
 				box-shadow: 0 8px 24px rgba(13, 13, 48, 0.2)
+		p
+			margin-top: revert
+			margin-bottom: 0
 		b
 			font-family: 'moderat-bold'
-		.text-review-content
 
 
 
@@ -63,16 +66,33 @@
 		font-size: 11px
 		line-height: 16px
 		font-family: 'moderat-mono-regular'
+		flex: 1 1 auto
+		display: flex
+		align-items: center
 
-@media (min-width: 768px)
-	.carousel
-		&-reviews
-			.review
-				&-img
-					width: 219px
-					height: 219px
-
+@media (min-width: 1200px)
 	.reviews
+		.carousel
+			&-reviews
+				font-size: 18px
+				line-height: 34px
+				height: calc(490px + 110px)
+				margin-top: -128px
+				.carousel
+					&-item
+						height: calc(490px + 110px)
+					&-control
+						&-prev,
+						&-next
+							top: 310px
+				.review
+					&-img
+						margin-top: 18px
+						width: 219px
+						height: 219px
+		&.bg-reviews
+			height: 472px
+
 		.h2
 			font-size: 30px
 			line-height: 45px
@@ -82,3 +102,6 @@
 		.text-review-content
 			font-size: 25px
 			line-height: 40px
+			p
+				margin-top: 0
+
