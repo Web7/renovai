@@ -18,13 +18,36 @@
 	var show = false;
 
 	$(function () {
+		var $carouselNavy = $('#carouselNavy');
 		var $counterSectionRcsar = $('.counter-section-rcsar');
-
 
 		if ($counterSectionRcsar.exists()) {
 			counterSectionRcsarTop = $counterSectionRcsar.offset().top;
 			windowHeight = window.innerHeight;
 			show = true;
+		}
+
+		if ($carouselNavy.exists()) {
+			var $carouselItem = $carouselNavy.find('.carousel-item.active');
+			var $videoCarousel = $carouselItem.find('.video-carousel');
+
+			$videoCarousel[0].play();
+
+			$videoCarousel[0].onended = function(){
+				$carouselNavy.carousel('next');
+			};
+
+			$carouselNavy.on('slid.bs.carousel', function(e){
+				if ($videoCarousel.exists()) {
+					$videoCarousel[0].pause();
+				}
+
+				$videoCarousel = $(e.relatedTarget).find('.video-carousel');
+
+				if ($videoCarousel.exists()) {
+					$videoCarousel[0].play();
+				}
+			})
 		}
 	});
 

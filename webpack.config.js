@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const configureCopy = () => {
 	return [
+		{from: "src/video/", to: "video/"},
 		{from: "src/images/", to: "images/"},
 		{from: 'src/fonts/', to: 'fonts/'}
 	]
@@ -60,6 +61,17 @@ module.exports = {
 					options: {
 						name: 'images/[name].[ext]',
 						outputPath: 'images/',
+						publicPath: '../'
+					}
+				}
+			},
+			{
+				test: /\.(mp4)$/,
+				use: {
+					loader: 'file-loader',
+					options: {
+						name: 'video/[name].[ext]',
+						outputPath: 'video/',
 						publicPath: '../'
 					}
 				}
