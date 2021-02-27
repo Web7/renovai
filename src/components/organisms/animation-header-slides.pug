@@ -1,5 +1,15 @@
 include ../molecules/animation-header-slide-01
+include ../molecules/animation-header-slide-02
+include ../molecules/animation-header-slide-03
+include ../molecules/animation-header-slide-04
 
 mixin AnimationHeaderSlides()
 	section.animation-header-section.bg-primary.position-relative
+		.pillar-container.overflow-hidden.w-100.h-100.animation-header-slide
+			.pillar-left
+			.pillar-center
+			.pillar-right
 		+AnimationHeaderSlide01()
+		+AnimationHeaderSlide02()
+		+AnimationHeaderSlide03()
+		+AnimationHeaderSlide04()

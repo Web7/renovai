@@ -16,4 +16,247 @@
 				height: 918px
 
 @media (min-width: 1200px)
+	.pillar
+		&-left
+			width: 318px
+			height: 600px
+			background-color: $secondary
+			border-radius: 192px 192px 0 0
+			position: absolute
+			left: 17.36%
+			top: 429px
+			mix-blend-mode: screen
+			animation: ease-out 23400ms 1 forwards pillarLeftKey
+		&-center
+			width: 318px
+			height: 1000px
+			background-color: $pink
+			border-radius: 0 0 192px 192px
+			position: absolute
+			bottom: 130px
+			right: 10.35%
+			mix-blend-mode: screen
+			animation: ease-out 23400ms 1 forwards pillarCenterKey
+		&-right
+			width: 318px
+			height: 600px
+			background-color: $purple
+			border-radius: 0 0 192px 192px
+			position: absolute
+			bottom: 423px
+			right: -4.38%
+			mix-blend-mode: screen
+			animation: ease-out 23400ms 1 forwards pillarRightKey
+
+	@keyframes pillarLeftKey
+		24.79%
+			background-color: $secondary
+		27.35%
+			background-color: $purple
+		35.04%
+			top: 429px
+			left: 17.36%
+		40.17%
+			top: 387px
+			left: 16.04%
+		53.42%
+			background-color: $purple
+		55.98%
+			background-color: $pink
+		82.05%
+			top: 387px
+			left: 16.04%
+		84.62%
+			top: 372px
+			left: 19.31%
+		100%
+			top: 372px
+			left: 19.31%
+			background-color: $pink
+
+	@keyframes pillarCenterKey
+		5.13%
+			bottom: 130px
+			width: 318px
+			right: 10.35%
+		6.41%
+			bottom: 46px
+			width: 339px
+			right: 10.28%
+		11.54%
+			width: 339px
+			right: 10.28%
+			background-color: $pink
+		14.1%
+			width: 318px
+			right: 10.35%
+			background-color: $white
+		24.79%
+			bottom: 46px
+			background-color: $white
+
+		27.35%
+			bottom: 80px
+			background-color: $secondary
+		32.48%
+			bottom: 80px
+			width: 318px
+			right: 10.35%
+		35.04%
+			bottom: 45px
+			width: 384px
+			right: 4.44%
+		40.17%
+			bottom: 45px
+			width: 384px
+			right: 4.44%
+			background-color: $secondary
+		42.74%
+			bottom: 60px
+			width: 320px
+			right: 4.45%
+			background-color: $white
+		53.42%
+			bottom: 60px
+			width: 320px
+			right: 4.45%
+			background-color: $white
+
+		55.98%
+			bottom: 114px
+			width: 347px
+			right: 9.45%
+			background-color: $purple
+		61.11%
+			bottom: 114px
+			width: 347px
+			right: 9.45%
+		63.68%
+			bottom: 43px
+			width: 335px
+			right: 8.65%
+		68.8%
+			bottom: 43px
+			width: 335px
+			right: 8.65%
+			background-color: $purple
+		71.37%
+			bottom: 42px
+			width: 307px
+			right: 7.5%
+			background-color: $white
+		82.05%
+			bottom: 42px
+			width: 307px
+			right: 7.5%
+			background-color: $white
+
+		84.62%
+			bottom: 285px
+			width: 344px
+			right: 7.92%
+			background-color: $secondary
+		89.74%
+			bottom: 285px
+			width: 344px
+			right: 7.92%
+		92.31%
+			bottom: 54px
+			width: 332px
+			right: 4.18%
+		97.44%
+			bottom: 54px
+			right: 4.18%
+			background-color: $secondary
+		100%
+			bottom: 79px
+			width: 332px
+			right: 4.87%
+			background-color: $white
+	@keyframes pillarRightKey
+		5.13%
+			bottom: 423px
+		6.41%
+			bottom: 918px
+		11.54%
+			bottom: 918px
+		14.1%
+			bottom: 918px
+		24.79%
+			bottom: 918px
+		27.35%
+			bottom: 423px
+			background-color: $pink
+		32.48%
+			bottom: 423px
+			background-color: $pink
+		35.04%
+			bottom: 918px
+		40.17%
+			bottom: 918px
+		42.74%
+			bottom: 918px
+		53.42%
+			bottom: 918px
+			background-color: $secondary
+			width: 259px
+			right: -0.27%
+		55.98%
+			bottom: 445px
+		61.11%
+			bottom: 445px
+			background-color: $secondary
+			width: 259px
+			right: -0.27%
+		63.68%
+			bottom: 918px
+		68.8%
+			bottom: 918px
+		71.37%
+			bottom: 918px
+		82.05%
+			bottom: 918px
+			width: 284px
+			background-color: $pink
+			right: -1.85%
+		84.62%
+			bottom: 512px
+		89.74%
+			bottom: 512px
+			width: 284px
+			background-color: $pink
+			right: -1.85%
+		92.31%
+			bottom: 918px
+		97.44%
+			bottom: 918px
+		100%
+			bottom: 918px
 	@import 'animation-header-slide-01'
+	@import 'animation-header-slide-02'
+	@import 'animation-header-slide-03'
+	@import 'animation-header-slide-04'
+//5.13%
+//6.41%
+//11.54%
+//14.1%
+//24.79%
+//27.35%
+//32.48%
+//35.04%
+//40.17%
+//42.74%
+//53.42%
+//55.98%
+//61.11%
+//63.68%
+//68.8%
+//71.37%
+//82.05%
+//84.62%
+//89.74%
+//92.31%
+//97.44%
+//100%
+
+
