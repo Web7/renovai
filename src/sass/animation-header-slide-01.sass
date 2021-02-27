@@ -13,6 +13,50 @@
 		bottom: 0
 		left: 20.2%
 		animation: ease-out 23400ms 1 forwards woman01Key
+	.properties-container
+		top: 314px
+		left: 62.1%
+		animation: ease-out 23400ms 1 forwards propertiesContainer01Key
+	.property
+		white-space: nowrap
+		animation: ease-out 23400ms 1 forwards property01Key
+		&-text
+			animation: ease-out 23400ms 1 forwards propertyText01Key
+
+@keyframes propertiesContainer01Key
+	5.13%
+		top: 314px
+		left: 62.1%
+	6.41%
+		top: 245px
+		left: 88.3%
+	100%
+		top: 245px
+		left: 88.3%
+
+@keyframes propertyText01Key
+	5.13%
+		opacity: 1
+		width: 100%
+	6.41%
+		opacity: 0
+		width: 0
+	100%
+		opacity: 0
+		width: 0
+
+@keyframes property01Key
+	5.13%
+		max-width: 100%
+	6.41%
+		max-width: 50px
+	24.79%
+		opacity: 1
+	27.35%
+		opacity: 0
+	100%
+		opacity: 0
+		max-width: 50px
 
 @keyframes woman01Key
 	24.79%
