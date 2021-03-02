@@ -16,8 +16,9 @@
 			&-prev
 				height: 652px
 				left: -37px
-				opacity: 1
+				opacity: 0
 				width: 75px
+				transition: opacity 300ms linear
 				&-icon
 					padding: 17px 11px
 					height: 89px
@@ -26,13 +27,15 @@
 					width: 75px
 					border-radius: 20px
 				&:hover
+					opacity: 1
 					.carousel-control-prev-icon
 						background-image: url(../images/icon-prev-review-hover-pink.svg)
 			&-next
 				height: 652px
 				right: -37px
-				opacity: 1
+				opacity: 0
 				width: 75px
+				transition: opacity 300ms linear
 				&-icon
 					padding: 17px 11px
 					height: 89px
@@ -41,6 +44,7 @@
 					width: 75px
 					border-radius: 20px
 				&:hover
+					opacity: 1
 					.carousel-control-next-icon
 						background-image: url(../images/icon-next-review-hover-pink.svg)
 
