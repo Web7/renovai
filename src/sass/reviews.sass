@@ -11,8 +11,32 @@
 	&-list
 		width: 100% !important
 		overflow: initial
+	&-arrow
+		top: calc(50% + 128px)
+	&-prev
+		height: 20px
+		width: 10px
+		left: -25px
+		&:before
+			content: ""
+			height: 20px
+			display: block
+			background: url(../images/icon-prev-review.svg) no-repeat center center
+			background-size: contain
+	&-next
+		height: 20px
+		width: 10px
+		right: -25px
+		&:before
+			content: ""
+			height: 20px
+			display: block
+			background: url(../images/icon-next-review.svg) no-repeat center center
+			background-size: contain
+
 .slick-prev, .slick-next
 	z-index: 100
+
 .carousel
 	&-reviews
 		font-size: 12px
@@ -42,6 +66,16 @@
 		//			&:hover
 		//				.carousel-control-next-icon
 		//					background-image: url(../images/icon-next-review-hover.svg)
+		.bg-image
+			height: calc(100% - 18px)
+			width: 210%
+			position: absolute
+			top: 68px
+			bottom: 0
+			background: no-repeat bottom center
+			z-index: -1
+			background-size: cover
+			margin: 0 -55%
 		.review
 			&-img
 				margin-top: 14px
@@ -82,6 +116,21 @@
 		align-items: center
 
 @media (min-width: 1200px)
+	.slick
+		&-prev
+			height: 46px
+			width: 26px
+			left: -45px
+			&:before
+				height: 46px
+
+
+		&-next
+			height: 46px
+			width: 26px
+			right: -45px
+			&:before
+				height: 46px
 	.reviews
 		.carousel
 			&-reviews
