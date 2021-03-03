@@ -1,34 +1,47 @@
+.slick
+	&-slide
+		margin-bottom: 50px
+		float: none
+		height: auto
+	&-initialized
+		.slick-slide
+			display: flex
+	&-track
+		display: flex
+	&-list
+		width: 100% !important
+		overflow: initial
+.slick-prev, .slick-next
+	z-index: 100
 .carousel
 	&-reviews
-		height: calc(418px + 51px)
 		font-size: 12px
 		line-height: 20px
 		font-family: 'moderat-regular'
 		margin-top: -65px
-		.carousel
-			&-item
-				height: calc(418px + 51px)
-			&-control
-				&-prev
-					top: 220px
-					left: -15%
-					opacity: 1
-					&-icon
-						background-image: url(../images/icon-prev-review.svg)
-						height: 40px
-					&:hover
-						.carousel-control-prev-icon
-							background-image: url(../images/icon-prev-review-hover.svg)
-				&-next
-					top: 220px
-					right: -15%
-					opacity: 1
-					&-icon
-						background-image: url(../images/icon-next-review.svg)
-						height: 40px
-					&:hover
-						.carousel-control-next-icon
-							background-image: url(../images/icon-next-review-hover.svg)
+		height: calc(100% + 65px)
+		//.carousel
+		//	&-control
+		//		&-prev
+		//			top: 220px
+		//			left: -15%
+		//			opacity: 1
+		//			&-icon
+		//				background-image: url(../images/icon-prev-review.svg)
+		//				height: 40px
+		//			&:hover
+		//				.carousel-control-prev-icon
+		//					background-image: url(../images/icon-prev-review-hover.svg)
+		//		&-next
+		//			top: 220px
+		//			right: -15%
+		//			opacity: 1
+		//			&-icon
+		//				background-image: url(../images/icon-next-review.svg)
+		//				height: 40px
+		//			&:hover
+		//				.carousel-control-next-icon
+		//					background-image: url(../images/icon-next-review-hover.svg)
 		.review
 			&-img
 				margin-top: 14px
@@ -40,7 +53,6 @@
 				background-size: cover
 				box-shadow: 0 8px 24px rgba(13, 13, 48, 0.2)
 		p
-			margin-top: revert
 			margin-bottom: 0
 		b
 			font-family: 'moderat-bold'
@@ -48,9 +60,7 @@
 
 
 .bg-reviews
-	background: $primary url(../images/bg-reviews.jpg) no-repeat center center
-	background-size: cover
-	height: 404px
+	background: $primary
 
 .reviews
 	.h2
@@ -77,23 +87,24 @@
 			&-reviews
 				font-size: 18px
 				line-height: 34px
-				height: calc(490px + 110px)
 				margin-top: -128px
-				.carousel
-					&-item
-						height: calc(490px + 110px)
-					&-control
-						&-prev,
-						&-next
-							top: 310px
+				height: calc(100% + 128px)
+				.bg-image
+					height: calc(100% - 78px)
+					width: 210%
+					position: absolute
+					top: 128px
+					bottom: 0
+					background: no-repeat bottom center
+					z-index: -1
+					background-size: cover
+					margin: 0 -55%
 				.review
 					&-img
 						margin-top: 18px
 						width: 219px
 						height: 219px
-		&.bg-reviews
-			height: 472px
-
+						min-height: 219px
 		.h2
 			font-size: 30px
 			line-height: 45px
@@ -101,8 +112,8 @@
 			font-size: 18px
 			line-height: 30px
 		.text-review-content
-			font-size: 25px
-			line-height: 40px
+			font-size: 20px
+			line-height: 35px
 			p
 				margin-top: 0
 

@@ -51,6 +51,7 @@
 	};
 
 	$(function () {
+		var $carouselReviews = $('#carouselReviews');
 		var $counterSectionRcsar = $('.counter-section-rcsar');
 		$carouselNavy = $('#carouselNavy');
 
@@ -64,6 +65,14 @@
 			startVideo();
 		}, 7000);
 
+		if ($carouselReviews.exists()) {
+			$carouselReviews.slick({
+				fade: true,
+				infinite: true,
+				cssEase: 'linear',
+				speed: 500
+			});
+		}
 	});
 
 	$(window).on('scroll', function () {
