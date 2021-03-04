@@ -82,14 +82,235 @@
 	.animation
 		&-header
 			&-section
+				height: 768px
+			&-text
+				font-size: 36px
+				line-height: 55px
+				top: 98px
+	.pillar
+		&-left
+			width: 235px
+			height: 600px
+			background-color: $secondary
+			border-radius: 192px 192px 0 0
+			position: absolute
+			left: 18.26%
+			top: 406px
+			mix-blend-mode: screen
+			animation: ease-out 23400ms 1 forwards pillarLeftKey
+		&-center
+			width: 235px
+			height: 1000px
+			bottom: 178px
+			right: 6.78%
+			animation: ease-out 23400ms 1 forwards pillarCenterKey
+		&-right
+			width: 235px
+			height: 600px
+			bottom: 423px
+			right: -8.49%
+			animation: ease-out 23400ms 1 forwards pillarRightKey
+
+	@keyframes pillarLeftKey
+		24.79%
+			background-color: $secondary
+		27.35%
+			background-color: $purple
+		35.04%
+			top: 406px
+			left: 18.26%
+		40.17%
+			top: 411px
+			left: 16.99%
+		53.42%
+			background-color: $purple
+		55.98%
+			background-color: $pink
+		82.05%
+			top: 411px
+			left: 16.99%
+		84.62%
+			top: 376px
+			left: 10.64%
+		100%
+			top: 376px
+			left: 10.64%
+			background-color: $pink
+
+	@keyframes pillarCenterKey
+		5.13%
+			bottom: 178px
+			width: 235px
+			right: 6.78%
+		6.41%
+			bottom: 66px
+			width: 237px
+			right: 8.97%
+		11.54%
+			width: 237px
+			right: 8.97%
+			bottom: 66px
+			background-color: $pink
+		14.1%
+			width: 237px
+			right: 9.05%
+			background-color: $white
+		24.79%
+			width: 237px
+			bottom: 66px
+			right: 9.05%
+			background-color: $white
+
+		27.35%
+			bottom: 187px
+			width: 229px
+			right: 13.38%
+			background-color: $secondary
+		32.48%
+			bottom: 187px
+			width: 229px
+			right: 13.38%
+		35.04%
+			bottom: 71px
+			width: 253px
+			right: 6.43%
+		40.17%
+			bottom: 71px
+			width: 253px
+			right: 6.43%
+			background-color: $secondary
+		42.74%
+			bottom: 47px
+			width: 224px
+			right: 4.82%
+			background-color: $white
+		53.42%
+			bottom: 47px
+			width: 224px
+			right: 4.82%
+			background-color: $white
+
+		55.98%
+			bottom: 80px
+			width: 277px
+			right: 9.36%
+			background-color: $purple
+		61.11%
+			bottom: 80px
+			width: 277px
+			right: 9.36%
+		63.68%
+			bottom: 53px
+			width: 277px
+			right: 9.08%
+		68.8%
+			bottom: 53px
+			width: 277px
+			right: 9.08%
+			background-color: $purple
+		71.37%
+			bottom: 85px
+			width: 234px
+			right: 7.5%
+			background-color: $white
+		82.05%
+			bottom: 85px
+			width: 234px
+			right: 7.5%
+			background-color: $white
+
+		84.62%
+			bottom: 229px
+			width: 275px
+			right: 8.16%
+			background-color: $secondary
+		89.74%
+			bottom: 229px
+			width: 275px
+			right: 8.16%
+		92.31%
+			bottom: 54px
+			width: 332px
+			right: 4.18%
+		97.44%
+			bottom: 54px
+			right: 4.18%
+			background-color: $secondary
+		100%
+			bottom: 79px
+			width: 332px
+			right: 4.87%
+			background-color: $white
+	@keyframes pillarRightKey
+		5.13%
+			bottom: 423px
+		6.41%
+			bottom: 918px
+		11.54%
+			bottom: 918px
+		14.1%
+			bottom: 918px
+		24.79%
+			bottom: 918px
+		27.35%
+			bottom: 423px
+			background-color: $pink
+		32.48%
+			bottom: 423px
+			background-color: $pink
+		35.04%
+			bottom: 918px
+		40.17%
+			bottom: 918px
+		42.74%
+			bottom: 918px
+		53.42%
+			bottom: 918px
+			background-color: $secondary
+			width: 259px
+			right: -0.27%
+		55.98%
+			bottom: 445px
+		61.11%
+			bottom: 445px
+			background-color: $secondary
+			width: 259px
+			right: -0.27%
+		63.68%
+			bottom: 918px
+		68.8%
+			bottom: 918px
+		71.37%
+			bottom: 918px
+		82.05%
+			bottom: 918px
+			width: 284px
+			background-color: $pink
+			right: -1.85%
+		84.62%
+			bottom: 512px
+		89.74%
+			bottom: 512px
+			width: 284px
+			background-color: $pink
+			right: -1.85%
+		92.31%
+			bottom: 918px
+		97.44%
+			bottom: 918px
+		100%
+			bottom: 918px
+
+@media (min-width: 1200px)
+	.animation
+		&-header
+			&-section
 				height: 918px
 
 			&-text
 				font-size: 50px
 				line-height: 75px
 				top: 108px
-
-@media (min-width: 1200px)
 	.properties-container
 		transition: width ease-out 300ms
 	.property
