@@ -1,99 +1,100 @@
-.animation-header-slide-03
-	position: absolute
-	left: 0
-	right: 0
-	top: 0
-	bottom: 0
-	z-index: 2
-	.man
-		width: 525px
-		height: 632px
-		background: url(../images/man-slide-03.png) no-repeat 0 0
+@media (min-width: 1200px)
+	.animation-header-slide-03
 		position: absolute
+		left: 0
+		right: 0
+		top: 0
 		bottom: 0
-		left: -525px
-		animation: ease-out 23400ms 1 forwards man03Key
-	.properties-container
-		opacity: 0
-		top: 239px
-		left: 61.1%
-		animation: ease-out 23400ms 1 forwards propertiesContainer03Key
-	.property
-		opacity: 0
-		white-space: nowrap
-		animation: ease-out 23400ms 1 forwards property03Key
-		&-text
-			animation: ease-out 23400ms 1 forwards propertyText03Key
+		z-index: 2
+		.man
+			width: 525px
+			height: 632px
+			background: url(../images/man-slide-03.png) no-repeat 0 0
+			position: absolute
+			bottom: 0
+			left: -525px
+			animation: ease-out 23400ms 1 forwards man03Key
+		.properties-container
+			opacity: 0
+			top: 239px
+			left: 61.1%
+			animation: ease-out 23400ms 1 forwards propertiesContainer03Key
+		.property
+			opacity: 0
+			white-space: nowrap
+			animation: ease-out 23400ms 1 forwards property03Key
+			&-text
+				animation: ease-out 23400ms 1 forwards propertyText03Key
 
-@keyframes propertiesContainer03Key
-	53.42%
-		opacity: 0
-	55.98%
-		opacity: 1
-	61.11%
-		top: 239px
-		left: 61.1%
-	63.68%
-		top: 239px
-		left: 90%
-	68.8%
-		top: 239px
-		left: 90%
-	71.37%
-		top: 285px
-		left: 91.1%
-	100%
-		opacity: 1
-		top: 285px
-		left: 91.1%
+	@keyframes propertiesContainer03Key
+		53.42%
+			opacity: 0
+		55.98%
+			opacity: 1
+		61.11%
+			top: 239px
+			left: 61.1%
+		63.68%
+			top: 239px
+			left: 90%
+		68.8%
+			top: 239px
+			left: 90%
+		71.37%
+			top: 285px
+			left: 91.1%
+		100%
+			opacity: 1
+			top: 285px
+			left: 91.1%
 
-@keyframes propertyText03Key
-	53.42%
-		opacity: 0
-	55.98%
-		opacity: 1
-		width: 100%
-	61.11%
-		opacity: 1
-		width: 100%
-	63.68%
-		opacity: 0
-		width: 0
-	100%
-		opacity: 0
-		width: 0
+	@keyframes propertyText03Key
+		53.42%
+			opacity: 0
+		55.98%
+			opacity: 1
+			width: 100%
+		61.11%
+			opacity: 1
+			width: 100%
+		63.68%
+			opacity: 0
+			width: 0
+		100%
+			opacity: 0
+			width: 0
 
-@keyframes property03Key
-	53.42%
-		opacity: 0
-	55.98%
-		opacity: 1
-	61.11%
-		max-width: 100%
-	63.68%
-		max-width: 50px
+	@keyframes property03Key
+		53.42%
+			opacity: 0
+		55.98%
+			opacity: 1
+		61.11%
+			max-width: 100%
+		63.68%
+			max-width: 50px
 
-	82.05%
-		opacity: 1
-	84.62%
-		opacity: 0
-	100%
-		opacity: 0
-		max-width: 50px
+		82.05%
+			opacity: 1
+		84.62%
+			opacity: 0
+		100%
+			opacity: 0
+			max-width: 50px
 
-@keyframes man03Key
-	53.42%
-		left: -525px
-		opacity: 0
-	55.98%
-		left: 22.2%
-		opacity: 1
-	82.05%
-		left: 22.2%
-		opacity: 1
-	84.62%
-		left: -525px
-		opacity: 0
-	100%
-		left: -525px
-		opacity: 0
+	@keyframes man03Key
+		53.42%
+			left: -525px
+			opacity: 0
+		55.98%
+			left: 22.2%
+			opacity: 1
+		82.05%
+			left: 22.2%
+			opacity: 1
+		84.62%
+			left: -525px
+			opacity: 0
+		100%
+			left: -525px
+			opacity: 0

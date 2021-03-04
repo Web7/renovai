@@ -6,88 +6,99 @@
 	bottom: 0
 	z-index: 2
 	.woman
-		width: 505px
-		height: 584px
+		width: 211px
+		height: 244px
 		background: url(../images/woman-slide-02.png) no-repeat 0 0
+		background-size: contain
 		position: absolute
 		bottom: 0
-		left: -505px
-		animation: ease-out 23400ms 1 forwards woman02Key
+		left: -29px
 	.properties-container
-		opacity: 0
-		top: 314px
-		left: 62.1%
-		animation: ease-out 23400ms 1 forwards propertiesContainer02Key
-	.property
-		opacity: 0
-		white-space: nowrap
-		animation: ease-out 23400ms 1 forwards property02Key
-		&-text
-			animation: ease-out 23400ms 1 forwards propertyText02Key
+		left: 115px
+		bottom: 0
+@media (min-width: 1200px)
+	.animation-header-slide-02
+		.woman
+			width: 505px
+			height: 584px
+			left: -505px
+			animation: ease-out 23400ms 1 forwards woman02Key
+		.properties-container
+			opacity: 0
+			bottom: initial
+			top: 314px
+			left: 62.1%
+			animation: ease-out 23400ms 1 forwards propertiesContainer02Key
+		.property
+			opacity: 0
+			white-space: nowrap
+			animation: ease-out 23400ms 1 forwards property02Key
+			&-text
+				animation: ease-out 23400ms 1 forwards propertyText02Key
 
-@keyframes propertiesContainer02Key
-	24.79%
-		opacity: 0
-	27.35%
-		opacity: 1
-	32.48%
-		top: 314px
-		left: 62.1%
-	35.04%
-		top: 188px
-		left: 89.3%
-	100%
-		opacity: 1
-		top: 188px
-		left: 89.3%
+	@keyframes propertiesContainer02Key
+		24.79%
+			opacity: 0
+		27.35%
+			opacity: 1
+		32.48%
+			top: 314px
+			left: 62.1%
+		35.04%
+			top: 188px
+			left: 89.3%
+		100%
+			opacity: 1
+			top: 188px
+			left: 89.3%
 
-@keyframes propertyText02Key
-	24.79%
-		opacity: 0
-	27.35%
-		width: 100%
-		opacity: 1
-	32.48%
-		width: 100%
-		opacity: 1
-	35.04%
-		opacity: 0
-		width: 0
-	100%
-		opacity: 0
-		width: 0
+	@keyframes propertyText02Key
+		24.79%
+			opacity: 0
+		27.35%
+			width: 100%
+			opacity: 1
+		32.48%
+			width: 100%
+			opacity: 1
+		35.04%
+			opacity: 0
+			width: 0
+		100%
+			opacity: 0
+			width: 0
 
-@keyframes property02Key
-	24.79%
-		opacity: 0
-	27.35%
-		opacity: 1
-	32.48%
-		max-width: 100%
-	35.04%
-		max-width: 50px
+	@keyframes property02Key
+		24.79%
+			opacity: 0
+		27.35%
+			opacity: 1
+		32.48%
+			max-width: 100%
+		35.04%
+			max-width: 50px
 
-	40.17%
-		opacity: 1
-	42.74%
-		opacity: 0
-	100%
-		opacity: 0
-		max-width: 50px
+		40.17%
+			opacity: 1
+		42.74%
+			opacity: 0
+		100%
+			opacity: 0
+			max-width: 50px
 
-@keyframes woman02Key
-	24.79%
-		opacity: 0
-		left: -505px
-	27.35%
-		left: 19.2%
-		opacity: 1
-	53.42%
-		left: 19.2%
-		opacity: 1
-	55.98%
-		left: -505px
-		opacity: 0
-	100%
-		left: -505px
-		opacity: 0
+	@keyframes woman02Key
+		24.79%
+			opacity: 0
+			left: -505px
+		27.35%
+			left: 19.2%
+			opacity: 1
+		53.42%
+			left: 19.2%
+			opacity: 1
+		55.98%
+			left: -505px
+			opacity: 0
+		100%
+			left: -505px
+			opacity: 0
