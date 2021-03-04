@@ -13,6 +13,64 @@
 		bottom: 0
 		left: -452px
 		animation: ease-out 23400ms 1 forwards man04Key
+	.properties-container
+		opacity: 0
+		top: 214px
+		left: 62.17%
+		animation: ease-out 23400ms 1 forwards propertiesContainer04Key
+	.property
+		opacity: 0
+		white-space: nowrap
+		animation: ease-out 23400ms 1 forwards property04Key
+		&-text
+			animation: ease-out 23400ms 1 forwards propertyText04Key
+
+@keyframes propertiesContainer04Key
+	82.05%
+		opacity: 0
+	84.62%
+		opacity: 1
+	89.74%
+		top: 214px
+		left: 62.17%
+	92.31%
+		top: 218px
+		left: 92.3%
+	100%
+		opacity: 1
+		top: 218px
+		left: 92.3%
+
+@keyframes property04Key
+	82.05%
+		opacity: 0
+	84.62%
+		opacity: 1
+	89.74%
+		max-width: 100%
+	92.31%
+		max-width: 50px
+	97.44%
+		opacity: 1
+	100%
+		opacity: 0
+		max-width: 50px
+
+@keyframes propertyText04Key
+	82.05%
+		opacity: 0
+	84.62%
+		width: 100%
+		opacity: 1
+	89.74%
+		width: 100%
+		opacity: 1
+	92.31%
+		opacity: 0
+		width: 0
+	100%
+		opacity: 0
+		width: 0
 
 @keyframes man04Key
 	82.05%
