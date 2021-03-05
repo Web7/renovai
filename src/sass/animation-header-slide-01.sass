@@ -6,7 +6,7 @@
 	bottom: 0
 	z-index: 2
 
-@media (min-width: 768px)
+@media (min-width: 992px)
 	.animation-header-slide-01
 		.woman
 			width: 382px
@@ -16,9 +16,53 @@
 			position: absolute
 			bottom: 0
 			left: 21.19%
-			animation: ease-out 23400ms 1 forwards woman01Key
+			animation: ease-out 23400ms 1 forwards woman01Key992
+		.properties-container
+			top: 322px
+			left: 54.3%
+			animation: ease-out 23400ms 1 forwards propertiesContainer01Key992
+		.property
+			white-space: nowrap
+			animation: ease-out 23400ms 1 forwards property01Key992
+			&-text
+				animation: ease-out 23400ms 1 forwards propertyText01Key992
 
-	@keyframes woman01Key
+	@keyframes propertiesContainer01Key992
+		5.13%
+			top: 322px
+			left: 54.3%
+		6.41%
+			top: 262px
+			left: 89.2%
+		100%
+			top: 262px
+			left: 89.2%
+
+	@keyframes propertyText01Key992
+		5.13%
+			opacity: 1
+			width: 100%
+		6.41%
+			opacity: 0
+			width: 0
+		100%
+			opacity: 0
+			width: 0
+
+	@keyframes property01Key992
+		5.13%
+			max-width: 100%
+		6.41%
+			max-width: 37px
+		24.79%
+			opacity: 1
+		27.35%
+			opacity: 0
+		100%
+			opacity: 0
+			max-width: 37px
+
+	@keyframes woman01Key992
 		24.79%
 			opacity: 1
 		27.35%
@@ -32,16 +76,15 @@
 			width: 518px
 			height: 632px
 			left: 20.2%
-			animation: ease-out 23400ms 1 forwards woman01Key
+			animation: ease-out 23400ms 1 forwards woman01Key1200
 		.properties-container
 			top: 314px
 			left: 62.1%
-			animation: ease-out 23400ms 1 forwards propertiesContainer01Key
+			animation: ease-out 23400ms 1 forwards propertiesContainer01Key1200
 		.property
-			white-space: nowrap
-			animation: ease-out 23400ms 1 forwards property01Key
+			animation: ease-out 23400ms 1 forwards property01Key1200
 			&-text
-				animation: ease-out 23400ms 1 forwards propertyText01Key
+				animation: ease-out 23400ms 1 forwards propertyText01Key1200
 		.phone-animation-slide-01
 			position: absolute
 			right: 12.3%
@@ -49,9 +92,9 @@
 			width: 374px
 			height: 702px
 			background: url(../images/phone-animation-slide-01.png) no-repeat 0 0
-			animation: ease-out 23400ms 1 forwards phoneAnimationSlide01Key
+			animation: ease-out 23400ms 1 forwards phoneAnimationSlide01Key1200
 
-	@keyframes phoneAnimationSlide01Key
+	@keyframes phoneAnimationSlide01Key1200
 		5.13%
 			top: -702px
 		6.41%
@@ -64,7 +107,7 @@
 			top: 118px
 			opacity: 0
 
-	@keyframes propertiesContainer01Key
+	@keyframes propertiesContainer01Key1200
 		5.13%
 			top: 314px
 			left: 62.1%
@@ -75,7 +118,7 @@
 			top: 245px
 			left: 88.3%
 
-	@keyframes propertyText01Key
+	@keyframes propertyText01Key1200
 		5.13%
 			opacity: 1
 			width: 100%
@@ -86,7 +129,7 @@
 			opacity: 0
 			width: 0
 
-	@keyframes property01Key
+	@keyframes property01Key1200
 		5.13%
 			max-width: 100%
 		6.41%
@@ -99,7 +142,7 @@
 			opacity: 0
 			max-width: 50px
 
-	@keyframes woman01Key
+	@keyframes woman01Key1200
 		24.79%
 			opacity: 1
 		27.35%

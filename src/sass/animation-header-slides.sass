@@ -78,7 +78,7 @@
 		right: -9.66%
 		mix-blend-mode: screen
 
-@media (min-width: 768px)
+@media (min-width: 992px)
 	.animation
 		&-header
 			&-section
@@ -97,38 +97,53 @@
 			left: 18.26%
 			top: 406px
 			mix-blend-mode: screen
-			animation: ease-out 23400ms 1 forwards pillarLeftKey
+			animation: ease-out 23400ms 1 forwards pillarLeftKey992
 		&-center
 			width: 235px
 			height: 1000px
 			bottom: 178px
 			right: 6.78%
-			animation: ease-out 23400ms 1 forwards pillarCenterKey
+			animation: ease-out 23400ms 1 forwards pillarCenterKey992
 		&-right
 			width: 235px
 			height: 600px
 			bottom: 423px
 			right: -8.49%
-			animation: ease-out 23400ms 1 forwards pillarRightKey
+			animation: ease-out 23400ms 1 forwards pillarRightKey992
 
-	@keyframes pillarLeftKey
+	.properties-container
+		transition: width ease-out 300ms
+	.property
+		margin-bottom: 24px
+		height: 37px
+		padding-left: 25px
+		padding-right: 12px
+		font-size: 14px
+		&-text
+			padding-left: 10px
+		.i
+			height: 20px
+			width: 20px
+
+	@keyframes pillarLeftKey992
 		24.79%
 			background-color: $secondary
-		27.35%
-			background-color: $purple
-		35.04%
 			top: 406px
 			left: 18.26%
-		40.17%
+		27.35%
+			background-color: $purple
 			top: 411px
+			left: 16.99%
+		40.17%
 			left: 16.99%
 		53.42%
 			background-color: $purple
+			left: 16.99%
 		55.98%
 			background-color: $pink
+			left: 10.64%
 		82.05%
 			top: 411px
-			left: 16.99%
 		84.62%
 			top: 376px
 			left: 10.64%
@@ -137,7 +152,7 @@
 			left: 10.64%
 			background-color: $pink
 
-	@keyframes pillarCenterKey
+	@keyframes pillarCenterKey992
 		5.13%
 			bottom: 178px
 			width: 235px
@@ -241,7 +256,7 @@
 			width: 275px
 			right: 7.37%
 			background-color: $white
-	@keyframes pillarRightKey
+	@keyframes pillarRightKey992
 		5.13%
 			bottom: 423px
 		6.41%
@@ -316,8 +331,6 @@
 				font-size: 50px
 				line-height: 75px
 				top: 108px
-	.properties-container
-		transition: width ease-out 300ms
 	.property
 		margin-bottom: 32px
 		height: 50px
@@ -333,35 +346,23 @@
 		&-left
 			width: 318px
 			height: 600px
-			background-color: $secondary
-			border-radius: 192px 192px 0 0
-			position: absolute
 			left: 17.36%
 			top: 429px
-			mix-blend-mode: screen
-			animation: ease-out 23400ms 1 forwards pillarLeftKey
+			animation: ease-out 23400ms 1 forwards pillarLeftKey1200
 		&-center
 			width: 318px
 			height: 1000px
-			background-color: $pink
-			border-radius: 0 0 192px 192px
-			position: absolute
 			bottom: 130px
 			right: 10.35%
-			mix-blend-mode: screen
-			animation: ease-out 23400ms 1 forwards pillarCenterKey
+			animation: ease-out 23400ms 1 forwards pillarCenterKey1200
 		&-right
 			width: 318px
 			height: 600px
-			background-color: $purple
-			border-radius: 0 0 192px 192px
-			position: absolute
 			bottom: 423px
 			right: -4.38%
-			mix-blend-mode: screen
-			animation: ease-out 23400ms 1 forwards pillarRightKey
+			animation: ease-out 23400ms 1 forwards pillarRightKey1200
 
-	@keyframes pillarLeftKey
+	@keyframes pillarLeftKey1200
 		24.79%
 			background-color: $secondary
 		27.35%
@@ -387,7 +388,7 @@
 			left: 19.31%
 			background-color: $pink
 
-	@keyframes pillarCenterKey
+	@keyframes pillarCenterKey1200
 		5.13%
 			bottom: 130px
 			width: 318px
@@ -486,7 +487,7 @@
 			width: 332px
 			right: 4.87%
 			background-color: $white
-	@keyframes pillarRightKey
+	@keyframes pillarRightKey1200
 		5.13%
 			bottom: 423px
 		6.41%

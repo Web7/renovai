@@ -1,14 +1,15 @@
 header
-	height: 84px
+	height: 47px
 	position: relative
 	z-index: 100
-	margin-bottom: -84px
+	margin-bottom: -47px
 .header
 	&-logo
 		display: inline-block
-		width: 120px
-		height: 26px
-		background: url(../images/logo.svg)
+		width: 79px
+		height: 17px
+		background: url(../images/logo.svg) no-repeat 0 0
+		background-size: contain
 		margin-right: 40px
 	&-nav
 		height: 54px
@@ -93,3 +94,31 @@ header
 @keyframes showMenu
 	100%
 		transform: translateY(-40px)
+
+@media (min-width: 768px)
+	header
+		height: 71px
+		margin-bottom: -71px
+	.header
+		&-logo
+			width: 88px
+			height: 19px
+			margin-right: 40px
+@media (min-width: 992px)
+	header
+		height: 74px
+		margin-bottom: -74px
+	.header
+		&-logo
+			width: 99px
+			height: 22px
+			margin-right: 40px
+@media (min-width: 1200px)
+	header
+		height: 84px
+		margin-bottom: -84px
+	.header
+		&-logo
+			width: 120px
+			height: 26px
+			margin-right: 40px
