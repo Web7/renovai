@@ -1,17 +1,45 @@
+.animation-header-slide-03
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: 2
+
+@media (min-width: 768px)
+	.animation-header-slide-03
+		.man
+			width: 401px
+			height: 483px
+			background: url(../images/man-slide-03.png) no-repeat 0 0
+			background-size: contain
+			position: absolute
+			bottom: 0
+			left: -483px
+			animation: ease-out 23400ms 1 forwards man03Key
+
+	@keyframes man03Key
+		53.42%
+			left: -583px
+			opacity: 0
+		55.98%
+			left: 16.67%
+			opacity: 1
+		82.05%
+			left: 16.67%
+			opacity: 1
+		84.62%
+			left: -483px
+			opacity: 0
+		100%
+			left: -483px
+			opacity: 0
+
 @media (min-width: 1200px)
 	.animation-header-slide-03
-		position: absolute
-		left: 0
-		right: 0
-		top: 0
-		bottom: 0
-		z-index: 2
 		.man
 			width: 525px
 			height: 632px
-			background: url(../images/man-slide-03.png) no-repeat 0 0
-			position: absolute
-			bottom: 0
 			left: -525px
 			animation: ease-out 23400ms 1 forwards man03Key
 		.properties-container

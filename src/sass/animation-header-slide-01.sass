@@ -1,17 +1,36 @@
+.animation-header-slide-01
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: 2
+
+@media (min-width: 768px)
+	.animation-header-slide-01
+		.woman
+			width: 382px
+			height: 466px
+			background: url(../images/woman-slide-01.png) no-repeat 0 0
+			background-size: contain
+			position: absolute
+			bottom: 0
+			left: 21.19%
+			animation: ease-out 23400ms 1 forwards woman01Key
+
+	@keyframes woman01Key
+		24.79%
+			opacity: 1
+		27.35%
+			opacity: 0
+		100%
+			opacity: 0
+
 @media (min-width: 1200px)
 	.animation-header-slide-01
-		position: absolute
-		left: 0
-		right: 0
-		top: 0
-		bottom: 0
-		z-index: 2
 		.woman
 			width: 518px
 			height: 632px
-			background: url(../images/woman-slide-01.png) no-repeat 0 0
-			position: absolute
-			bottom: 0
 			left: 20.2%
 			animation: ease-out 23400ms 1 forwards woman01Key
 		.properties-container
