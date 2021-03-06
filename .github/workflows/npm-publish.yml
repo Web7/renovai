@@ -1,22 +1,11 @@
-name: Node CI
-
-on: push
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
+    runs-on: windows-latest
+    name: Node sample
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install, build
-      run: |
-        npm install
-        npm run build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          architecture: 'x64' # optional, x64 or x86. If not specified, x64 will be used by default
+      - run: npm install
