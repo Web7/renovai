@@ -11,3 +11,4 @@ jobs:
           node-version: '14'
           architecture: 'x64' # optional, x64 or x86. If not specified, x64 will be used by default
       - run: npm install
+      - run: npm run build
