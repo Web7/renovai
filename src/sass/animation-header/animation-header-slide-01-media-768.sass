@@ -1,0 +1,85 @@
+@media (min-width: 768px)
+	.animation-header-slide-01
+		.woman
+			width: 382px
+			height: 466px
+			background: url(../images/woman-slide-01.png) no-repeat 0 0
+			background-size: contain
+			position: absolute
+			bottom: 0
+			left: 21.19%
+			animation: ease-out 23400ms 1 forwards woman01Key768
+		.properties-container
+			top: 322px
+			left: 54.3%
+			animation: ease-out 23400ms 1 forwards propertiesContainer01Key768
+		.property
+			white-space: nowrap
+			animation: ease-out 23400ms 1 forwards property01Key768
+			&-text
+				animation: ease-out 23400ms 1 forwards propertyText01Key
+		.phone-animation-slide-01
+			position: absolute
+			right: 10.94%
+			top: -491px
+			width: 262px
+			height: 491px
+			background: url(../images/phone-animation-slide-01.png) no-repeat 0 0
+			background-size: contain
+			animation: ease-out 23400ms 1 forwards phoneAnimationSlide01Key768
+
+	@keyframes phoneAnimationSlide01Key768
+		5.13%
+			top: -491px
+		6.41%
+			top: 175px
+		11.54%
+			opacity: 1
+		14.1%
+			opacity: 0
+		100%
+			top: 175px
+			opacity: 0
+
+	@keyframes propertiesContainer01Key768
+		5.13%
+			top: 322px
+			left: 54.3%
+		6.41%
+			top: 262px
+			left: 89.2%
+		100%
+			top: 262px
+			left: 89.2%
+
+	@keyframes propertyText01Key
+		5.13%
+			opacity: 1
+			width: 100%
+		6.41%
+			opacity: 0
+			width: 0
+		100%
+			opacity: 0
+			width: 0
+
+	@keyframes property01Key768
+		5.13%
+			max-width: 100%
+		6.41%
+			max-width: 37px
+		24.79%
+			opacity: 1
+		27.35%
+			opacity: 0
+		100%
+			opacity: 0
+			max-width: 37px
+
+	@keyframes woman01Key768
+		24.79%
+			opacity: 1
+		27.35%
+			opacity: 0
+		100%
+			opacity: 0
