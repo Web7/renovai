@@ -77,6 +77,7 @@
 
 		if ($slickLogos.exists()) {
 			$slickLogos.slick({
+				arrows: false,
 				slidesToShow: 5,
 				autoplay: true
 			});
