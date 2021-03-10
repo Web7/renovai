@@ -51,6 +51,7 @@
 	};
 
 	$(function () {
+		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counterSectionRcsar = $('.counter-section-rcsar');
 		$carouselNavy = $('#carouselNavy');
@@ -71,6 +72,13 @@
 				infinite: true,
 				cssEase: 'linear',
 				speed: 500
+			});
+		}
+
+		if ($slickLogos.exists()) {
+			$slickLogos.slick({
+				slidesToShow: 5,
+				autoplay: true
 			});
 		}
 	});
