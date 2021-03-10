@@ -11,6 +11,9 @@
 			animation: ease-out 23400ms 1 forwards propertiesContainer01Key1200
 		.property
 			animation: ease-out 23400ms 1 forwards property01Key1200
+			&-text
+				width: 100%
+				animation: ease-out 23400ms 1 forwards propertyText01Key1200
 		.phone-animation-slide-01
 			right: 177px
 			top: -702px
@@ -194,6 +197,17 @@
 		100%
 			top: 245px
 			left: 88.3%
+
+	@keyframes propertyText01Key1200
+		5.13%
+			opacity: 1
+			width: 100%
+		6.41%
+			opacity: 0
+			width: 0
+		100%
+			opacity: 0
+			width: 0
 
 	@keyframes property01Key1200
 		5.13%
