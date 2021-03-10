@@ -16,7 +16,7 @@
 	var $carouselNavy;
 	var counterSectionRcsarTop;
 	var windowHeight;
-	var show = false;
+	var show = true;
 
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
@@ -57,7 +57,7 @@
 		$carouselNavy = $('#carouselNavy');
 
 		if ($counterSectionRcsar.exists()) {
-			counterSectionRcsarTop = $counterSectionRcsar.offset().top;
+			counterSectionRcsarTop = $counterSectionRcsar[0].offsetTop;
 			windowHeight = window.innerHeight;
 			show = true;
 		}

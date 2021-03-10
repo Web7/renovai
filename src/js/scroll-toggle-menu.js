@@ -7,6 +7,10 @@
 		factory(jQuery || Zepto);
 	}
 }(function ($) {
+	$.fn.exists = function () {
+		return this.length !== 0;
+	};
+
 	var classNames = {
 		smToggleMenu: 'sm-toggle-menu',
 		smTogglePosition: 'sm-toggle-position',
