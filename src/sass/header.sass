@@ -3,6 +3,25 @@ header
 	position: relative
 	z-index: 100
 	margin-bottom: -47px
+	.navbar
+		&-toggler
+			position: relative
+			z-index: 1
+			.i-menu
+				&-hamburger
+					display: none
+				&-close
+					display: inline-block
+			&.collapsed
+				.i-menu
+					&-hamburger
+						display: inline-block
+					&-close
+						display: none
+		&-collapse
+			a:not(.btn)
+				color: $body-color
+
 .slick-logos
 	.slick-list
 		overflow: hidden
@@ -22,15 +41,17 @@ header
 		background-size: contain
 		margin-right: 40px
 	&-nav
-		height: 60px
+		background-color: $white
+		min-height: 60px
 		display: flex
 		align-items: center
-		margin: 0
-		padding: 0
+		margin: 0 -16px
+		padding: 60px 0 33px 0
+		margin-top: -60px
 		a:not(.btn)
-			font-family: 'moderat-light'
-			color: $white
-			font-size: 18px
+			font-family: 'moderat-black'
+			color: $body-color
+			font-size: 20px
 			line-height: 24px
 			&.active
 				font-family: 'moderat-black'
@@ -39,46 +60,41 @@ header
 		.nav
 			&-item
 				box-sizing: content-box
-				padding-right: 32px
 			&-link
 				display: inline-block
 				padding: 5px 0 3px 0
+				margin-bottom: 24px
 				border-bottom: 2px solid transparent
 				transition: border-bottom-color linear 500ms
 				&:hover
 					border-bottom-color: $secondary
 					transition: border-bottom-color linear 300ms
 		.dropdown
-			height: 100%
-			display: flex
-			align-items: center
 			&:hover
 				.dropdown-menu
 					display: block
+					border: 0
 			&-toggle
 				&:after
 					display: none
 			&-menu
-				border-radius: 20px
 				padding: 0
-				min-width: 280px
-				top: 58px !important
 			&-item,
 			a.dropdown-item
-				font-size: 15px
-				line-height: 18px
-				font-family: 'moderat-medium'
-				padding: 12px 16px
+				text-align: center
+				font-size: 16px
+				line-height: 24px
+				font-family: 'moderat-light'
+				margin-bottom: 16px
+				padding: 0
 				color: $primary
 				transition: color linear 500ms, background-color linear 500ms
 				&:hover
 					background-color: $secondary
 					color: $white
 					transition: color linear 300ms, background-color linear 300ms
-				&:first-child
-					border-radius: 18px 18px 0 0
-				&:last-child
-					border-radius: 0 0 18px 18px
+
+
 .sm-toggle-menu
 	&.position
 		&-static
@@ -87,24 +103,35 @@ header
 			background-color: $white
 			animation: showMenu 300ms linear reverse infinite
 			animation-iteration-count: 1
-			.header
-				&-logo
-					background-image: url(../images/logo-black.svg)
-				&-nav
-					a
-						color: $primary
-
-					.btn
-						&-static
-							display: none
-						&-fixed
-							display: block
+	.btn
+		&-static,
+		&-fixed
+			display: none
 
 @keyframes showMenu
 	100%
 		transform: translateY(-40px)
 
 @media (min-width: 768px)
+	.sm-toggle-menu
+		.btn
+			&-static
+				display: block
+		&.position
+			&-fixed
+				.header
+					&-logo
+						background-image: url(../images/logo-black.svg)
+					&-nav
+						a:not(.btn)
+							color: $primary !important
+
+						.btn
+							&-static
+								display: none
+							&-fixed
+								display: block
+
 	header
 		height: 71px
 		margin-bottom: -71px
@@ -112,13 +139,52 @@ header
 		&-logo
 			width: 88px
 			height: 19px
-			margin-right: 0
+			margin-right: 19px
 		&-nav
+			margin: 0
+			padding: 0
+			background-color: transparent
 			a:not(.btn)
+				font-family: 'moderat-light'
 				font-size: 14px
+				color: $white !important
 			.nav
 				&-item
 					padding-right: 16px
+				&-link
+					padding: 0 !important
+					margin-bottom: 0
+			.dropdown
+				height: 100%
+				display: flex
+				align-items: center
+				&:hover
+					.dropdown-menu
+						display: block
+				&-toggle
+					&:after
+						display: none
+				&-menu
+					border-radius: 20px
+					padding: 0
+					min-width: 280px
+					top: 58px !important
+				&-item,
+				a.dropdown-item
+					font-size: 15px
+					line-height: 18px
+					font-family: 'moderat-medium'
+					padding: 12px 16px
+					color: $primary !important
+					transition: color linear 500ms, background-color linear 500ms
+					&:hover
+						background-color: $secondary
+						color: $white !important
+						transition: color linear 300ms, background-color linear 300ms
+					&:first-child
+						border-radius: 18px 18px 0 0
+					&:last-child
+						border-radius: 0 0 18px 18px
 	.slick-logos
 		.slick-slide
 			div
@@ -133,7 +199,7 @@ header
 		&-logo
 			width: 99px
 			height: 22px
-			margin-right: 22px
+			margin-right: 52px
 		&-nav
 			a:not(.btn)
 				font-size: 16px
@@ -148,7 +214,7 @@ header
 		&-logo
 			width: 120px
 			height: 26px
-			margin-right: 6px
+			margin-right: 36px
 		&-nav
 			a:not(.btn)
 				font-size: 20px

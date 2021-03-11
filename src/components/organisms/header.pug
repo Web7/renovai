@@ -1,15 +1,17 @@
-header.d-flex.align-items-center.sm-toggle-menu.position-static.w-100.shadow
+header.d-flex.align-items-md-center.sm-toggle-menu.position-static.w-100.shadow
 	.container
-		.row.align-items-center
-			.col-auto.align-content-center
-				a.header-logo(href="#")
-			.d-md-inline-block.d-none.col-auto
-				ul.nav.header-nav
+		nav.navbar.navbar-expand-sm.p-0
+			a.header-logo(href="#")
+			button.navbar-toggler.collapsed.px-0(type="button" data-toggle="collapse" data-target="#headerNavBar" aria-controls="headerNavBar" aria-expanded="false")
+				i.i.i-menu-hamburger
+				i.i.i-menu-close
+			.collapse.navbar-collapse.no-transition#headerNavBar
+				ul.navbar-nav.header-nav.text-center
 					li.nav-item
-						a.nav-link.active(href="#") Home
+						a.nav-link.active.d-none.d-md-inline-block(href="#") Home
 					li.nav-item.dropdown
 						a.nav-link.dropdown-toggle(href="#") Resources
-						.dropdown-menu.shadow
+						.dropdown-menu
 							a.dropdown-item(href="#") Blog
 							a.dropdown-item(href="#") White Papers
 							a.dropdown-item(href="#") Data Sheets
@@ -33,7 +35,9 @@ header.d-flex.align-items-center.sm-toggle-menu.position-static.w-100.shadow
 							a.dropdown-item(href="#") Careers
 					li.nav-item
 						a.nav-link(href="#") Contact Us
-					li.nav-item.btn-static.mr-0
+					li.nav-item.mr-0.pr-0.d-md-none
+						a.btn.btn-primary.shadow(href="#") Book a Demo
+					li.nav-item.btn-static.mr-0.pr-0
 						a.btn.btn-light.shadow(href="#") Book a Demo
-					li.nav-item.btn-fixed.mr-0
+					li.nav-item.btn-fixed.mr-0.pr-0
 						a.btn.btn-secondary.shadow(href="#") Book a Demo
