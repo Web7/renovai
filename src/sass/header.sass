@@ -3,24 +3,6 @@ header
 	position: relative
 	z-index: 100
 	margin-bottom: -47px
-	.navbar
-		&-toggler
-			position: relative
-			z-index: 1
-			.i-menu
-				&-hamburger
-					display: none
-				&-close
-					display: inline-block
-			&.collapsed
-				.i-menu
-					&-hamburger
-						display: inline-block
-					&-close
-						display: none
-		&-collapse
-			a:not(.btn)
-				color: $body-color
 
 .slick-logos
 	.slick-list
@@ -96,13 +78,45 @@ header
 
 
 .sm-toggle-menu
+	.navbar
+		&-toggler
+			position: relative
+			z-index: 1
+			.i-menu
+				&-close
+					display: inline-block
+				&-hamburger
+					display: none
+					&-fixed
+						display: none
+			&.collapsed
+				.i-menu
+					&-close
+						display: none
 	&.position
 		&-static
 			box-shadow: none !important
+			.navbar
+				&-toggler
+					&.collapsed
+						.i-menu
+							&-hamburger
+								display: inline-block
+								&-fixed
+									display: none
 		&-fixed
 			background-color: $white
 			animation: showMenu 300ms linear reverse infinite
 			animation-iteration-count: 1
+			.navbar
+				&-toggler
+					&.collapsed
+						.i-menu
+							&-hamburger
+								display: none
+								&-fixed
+									display: inline-block
+
 	.btn
 		&-static,
 		&-fixed
