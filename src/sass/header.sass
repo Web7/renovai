@@ -79,6 +79,15 @@ header
 
 .sm-toggle-menu
 	.navbar
+		display: flex !important
+		&.collapse
+			.header-logo
+				background-image: url(../images/logo.svg)
+				z-index: 1
+				position: relative
+			&.show
+				.header-logo
+					background-image: url(../images/logo-black.svg)
 		&-toggler
 			position: relative
 			z-index: 1
@@ -108,6 +117,9 @@ header
 			background-color: $white
 			animation: showMenu 300ms linear reverse infinite
 			animation-iteration-count: 1
+			.header
+				&-logo
+					background-image: url(../images/logo-black.svg)
 			.navbar
 				&-toggler
 					&.collapsed
