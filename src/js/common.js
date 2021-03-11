@@ -57,9 +57,11 @@
 		$carouselNavy = $('#carouselNavy');
 
 		if ($counterSectionRcsar.exists()) {
-			counterSectionRcsarTop = $counterSectionRcsar[0].offsetTop;
-			windowHeight = window.innerHeight;
-			show = true;
+			setTimeout(function(){
+				counterSectionRcsarTop = $counterSectionRcsar[0].offsetTop;
+				windowHeight = window.innerHeight;
+				show = true;
+			}, 100);
 		}
 
 		setTimeout(function () {
