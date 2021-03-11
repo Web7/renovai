@@ -90,13 +90,14 @@
 			if ($dataCounter.exists()) {
 				$dataCounter.each(function () {
 					var $this = $(this);
+					var dataPrefix = $this.attr('data-prefix');
 					$this.prop('counter', 0).animate({
 						counter: $this.attr('data-counter')
 					}, {
 						duration: 1000,
 						easing: 'swing',
 						step: function (now) {
-							$this.text(this.counter.toFixed(0) + '%')
+							$this.text(this.counter.toFixed(0) + dataPrefix)
 						}
 					})
 				});
