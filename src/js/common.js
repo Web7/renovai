@@ -86,6 +86,14 @@
 		}
 	});
 
+	$(document).on('mouseover', '.careers-grandmother-link', function(){
+		$(this).closest('.careers-grandmother-container').addClass('hover');
+	});
+
+	$(document).on('mouseout', '.careers-grandmother-link', function(){
+		$(this).closest('.careers-grandmother-container').removeClass('hover');
+	});
+
 	$(window).on('scroll', function () {
 		if (show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)) {
 			var $dataCounter = $('[data-counter]');
