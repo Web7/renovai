@@ -129,6 +129,20 @@ header
 								&-fixed
 									display: inline-block
 
+	&.black-header-menu
+		.header
+			&-logo
+				background-image: url(../images/logo-black.svg)
+			.navbar
+				&-toggler
+					&.collapsed
+						.i-menu
+							&-hamburger
+								display: none
+								&-fixed
+									display: inline-block
+
+
 	.btn
 		&-static,
 		&-fixed
@@ -143,20 +157,20 @@ header
 		.btn
 			&-static
 				display: block
-		&.position
-			&-fixed
-				.header
-					&-logo
-						background-image: url(../images/logo-black.svg)
-					&-nav
-						a:not(.btn)
-							color: $primary !important
+		&.black-header-menu,
+		&.position-fixed
+			.header
+				&-logo
+					background-image: url(../images/logo-black.svg)
+				&-nav
+					a:not(.btn)
+						color: $primary !important
+					.btn
+						&-static
+							display: none
+						&-fixed
+							display: block
 
-						.btn
-							&-static
-								display: none
-							&-fixed
-								display: block
 
 	header
 		height: 71px
