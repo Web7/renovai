@@ -53,12 +53,12 @@
 	$(function () {
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
-		var $counterSectionRcsar = $('.counter-section-rcsar');
+		var $counters = $('.counters');
 		$carouselNavy = $('#carouselNavy');
 
-		if ($counterSectionRcsar.exists()) {
+		if ($counters.exists()) {
 			setTimeout(function(){
-				counterSectionRcsarTop = $counterSectionRcsar[0].offsetTop;
+				counterSectionRcsarTop = $counters[0].offsetTop;
 				windowHeight = window.innerHeight;
 				show = true;
 			}, 100);

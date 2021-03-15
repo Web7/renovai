@@ -34,6 +34,11 @@ module.exports = {
 			filename: 'index.html',
 			file: require('./src/data/index.json')
 		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/product-page.pug',
+			filename: 'product-page.html',
+			file: require('./src/data/index.json')
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
 			chunkFilename: '[id].css'
