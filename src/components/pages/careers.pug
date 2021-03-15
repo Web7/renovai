@@ -1,6 +1,10 @@
 extends ../templates/layout
 include ../organisms/experience-renovai
+include ../organisms/careers/careers-header
+include ../organisms/careers/careers-grandmother
 
 block main
 	main
+		+CareersHeader()
+		+CareersGrandmother()
 		+ExperienceRenovai()
