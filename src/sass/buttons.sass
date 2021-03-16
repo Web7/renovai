@@ -56,7 +56,7 @@
 
 		.i
 			&-right-arrow
-				background-image: url(../images/icon-right-arrow-navy.svg)
+				background-image: url(../images/icon-right-arrow-white.svg)
 		&:not(.disabled):not(:disabled)
 			&:focus,
 			&:active
@@ -94,3 +94,17 @@
 
 		.i
 			margin-left: 8px
+	&-lg
+		.i
+			width: 20px
+			height: 20px
+	&:disabled,
+	&.disabled
+		font-family: 'moderat-medium'
+		background-color: $gray-500 !important
+		border-color: $gray-500 !important
+		color: $gray-300 !important
+		box-shadow: none !important
+		.i
+			&-right-arrow
+				background-image: url(../images/icon-right-arrow-disabled.svg)

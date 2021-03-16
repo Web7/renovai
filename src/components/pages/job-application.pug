@@ -54,7 +54,7 @@ block main
 								label.col-sm-3.col-form-label(for="firstName") First Name
 									small.text-pink *
 								.col-sm-9
-									input.form-control#firstName(type="text")
+									input.form-control.is-valid#firstName(type="text")
 							.form-group.row
 								label.col-sm-3.col-form-label(for="lastName") Last Name
 									small.text-pink *
@@ -84,4 +84,16 @@ block main
 								label.col-sm-3.col-form-label(for="personalWebsite") Personal Website
 								.col-sm-9
 									input.form-control#personalWebsite(type="text")
+							.form-group.row.align-items-center
+								label.col-sm-3.col-form-label(for="personalNote") Personal Note
+								.col-sm-9
+									textarea.form-control#personalNote
+								.col-sm-9.offset-3
+									.custom-file
+										input.custom-file-input#coverLetter(type="file")
+										label.custom-file-label(for="coverLetter") Upload Cover Letter
+								.col-sm-9.offset-3.mt-6
+									button.btn.btn-secondary.btn-icon.btn-lg.shadow(type="submit" disabled)
+										span Submit Application
+										i.i.i-sm.i-right-arrow
 		+ExperienceRenovai()
