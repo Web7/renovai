@@ -49,4 +49,39 @@ block main
 							li eCommerce experience - advantage
 							li Basic tech understanding - must
 						h2.h2.mb-4.mt-7 Apply for this position
+						form
+							.form-group.row
+								label.col-sm-3.col-form-label(for="firstName") First Name
+									small.text-pink *
+								.col-sm-9
+									input.form-control#firstName(type="text")
+							.form-group.row
+								label.col-sm-3.col-form-label(for="lastName") Last Name
+									small.text-pink *
+								.col-sm-9
+									input.form-control#lastName(type="text")
+							.form-group.row
+								label.col-sm-3.col-form-label(for="eMail") E-mail
+									small.text-pink *
+								.col-sm-9
+									input.form-control#eMail(type="text")
+							.form-group.row
+								label.col-sm-3.col-form-label(for="phone") Phone
+									small.text-pink *
+								.col-sm-9
+									input.form-control#phone(type="text")
+							.form-group.row
+								label.col-sm-3.col-form-label(for="resume") Resume
+									small.text-pink *
+								.col-sm-9.custom-file
+									input.custom-file-input#resume(type="file")
+									label.custom-file-label Upload Resume
+							.form-group.row
+								label.col-sm-3.col-form-label(for="linkedIn") LinkedIn
+								.col-sm-9
+									input.form-control#linkedIn(type="text")
+							.form-group.row
+								label.col-sm-3.col-form-label(for="personalWebsite") Personal Website
+								.col-sm-9
+									input.form-control#personalWebsite(type="text")
 		+ExperienceRenovai()
