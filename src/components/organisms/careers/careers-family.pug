@@ -28,16 +28,20 @@ mixin CareersFamily()
 					.no-vacation
 						p Unfortunately, there are no current openings in this category, please check back soon again!
 				.tab-pane.fade.show.active#pillsSales(role="tabpanel")
-					a.h4.text-decoration-none.d-inline-block(href="#") Inside Sales Manager
-					ul.list-vacation
-						li
-							i.i.i-time.i-sm.mr-3
-							| Full Time
-						li
-							i.i.i-map-point.i-sm.mr-3
-							| Tel-Aviv
-						li
-							i.i.i-pan.i-sm.mr-3
-							a(href="#") Apply here
-					.w-75.border-bottom.pt-3
+					.row
+						.col-6
+							a.h4.text-decoration-none.d-flex.justify-content-between.align-items-center(href="#")
+								span Inside Sales Manager
+								i.i.i-double-arrow-right
+							ul.list-vacation
+								li
+									i.i.i-time.i-sm.mr-3
+									| Full Time
+								li
+									i.i.i-map-point.i-sm.mr-3
+									| Tel-Aviv
+								li
+									i.i.i-pan.i-sm.mr-3
+									a(href="#") Apply here
+							.border-bottom.pt-3
 				.tab-pane.fade#pillsSuccess(role="tabpanel")
