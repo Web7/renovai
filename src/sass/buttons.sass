@@ -67,6 +67,27 @@
 					&-right-arrow
 						background-image: url(../images/icon-right-arrow.svg)
 
+	&-primary
+		&:hover
+			background-color: $blue3
+			border-color: $blue3
+			color: $white !important
+			.i
+				&-right-arrow
+					background-image: url(../images/icon-right-arrow-white.svg)
+		.i
+			&-right-arrow
+				background-image: url(../images/icon-right-arrow-white.svg)
+		&:not(.disabled):not(:disabled)
+			&:focus,
+			&:active
+				background-color: $white
+				border-color: $navy
+				color: $navy !important
+				.i
+					&-right-arrow
+						background-image: url(../images/icon-right-arrow-navy.svg)
+
 	&-icon
 		display: inline-flex
 		align-items: center

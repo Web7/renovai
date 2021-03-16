@@ -56,6 +56,12 @@
 			font-weight: normal
 			font-size: 40px
 			line-height: 88px
+			position: absolute
+			left: 0
+			right: 0
+			top: -151px
+			margin: 0 auto
+			transition: left ease-out 400ms, top ease-out 400ms
 			b, strong
 				font-family: 'moderat-bold'
 				font-weight: normal
@@ -71,6 +77,7 @@
 		&.hover
 			.careers-grandmother-link:not(:hover)
 				opacity: 0
+				z-index: -1
 	&-link
 		position: absolute
 		color: $white
@@ -85,6 +92,7 @@
 			font-weight: 700
 			text-decoration: none
 			color: $blue3
+			z-index: 3
 			&:before,
 			&:after
 				opacity: 0
@@ -134,6 +142,9 @@
 					span
 						top: -58px
 						left: -188px
+					& ~ .title
+						left: -422px
+						top: -121px
 			&-fast-link
 				width: 99px
 				left: 208px
@@ -163,6 +174,9 @@
 					span
 						top: -175px
 						left: -48px
+					& ~ .title
+						left: -422px
+						top: -81px
 			&-accountable-link
 				width: 215px
 				left: 169px
@@ -192,6 +206,9 @@
 					span
 						top: -510px
 						left: -9px
+					& ~ .title
+						left: -422px
+						top: -81px
 			&-a-team-player-link
 				width: 231px
 				left: 209px
@@ -221,6 +238,9 @@
 					span
 						top: -743px
 						left: -50px
+					& ~ .title
+						left: -422px
+						top: -81px
 
 			&-data-driven-link
 				width: 202px
@@ -248,6 +268,12 @@
 							top: 15px
 						.be-data-driven-text
 							opacity: 1
+					span
+						top: -160px
+						left: -155px
+					& ~ .title
+						left: -422px
+						top: -81px
 			&-happy-link
 				width: 131px
 				left: 1076px
@@ -274,6 +300,12 @@
 							top: 207px
 						.be-happy-text
 							opacity: 1
+					span
+						top: -264px
+						left: -174px
+					& ~ .title
+						left: -422px
+						top: -81px
 			&-passionate-link
 				width: 189px
 				left: 1066px
@@ -300,6 +332,12 @@
 							top: 119px
 						.be-passionate-text
 							opacity: 1
+					span
+						top: -382px
+						left: -178px
+					& ~ .title
+						left: -422px
+						top: -81px
 			&-exceptional-link
 				width: 202px
 				left: 1066px
@@ -326,6 +364,12 @@
 							top: 228px
 						.be-exceptional-text
 							opacity: 1
+					span
+						top: -670px
+						left: -179px
+					& ~ .title
+						left: -422px
+						top: -81px
 .be
 	&-innovative-text,
 	&-fast-text,
