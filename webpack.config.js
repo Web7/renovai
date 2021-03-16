@@ -44,6 +44,11 @@ module.exports = {
 			filename: 'careers.html',
 			file: require('./src/data/index.json')
 		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/job-application.pug',
+			filename: 'job-application.html',
+			file: require('./src/data/index.json')
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
 			chunkFilename: '[id].css'
