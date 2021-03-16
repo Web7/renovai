@@ -9,7 +9,7 @@ mixin CareersFamily()
 				h3.h3 Check out our open positions:
 			ul.nav.nav-pills.nav-justified#pillsTab(role="tablist")
 				li.nav-item(role="presentation")
-					a.nav-link.active(data-toggle="pill" href="#pillsMarketing" role="tab" aria-controls="pillsMarketing" aria-selected="true") Marketing
+					a.nav-link(data-toggle="pill" href="#pillsMarketing" role="tab" aria-controls="pillsMarketing" aria-selected="true") Marketing
 				li.nav-item(role="presentation")
 					a.nav-link(data-toggle="pill" href="#pillsProduct" role="tab" aria-controls="pillsProduct" aria-selected="true") Product
 				li.nav-item(role="presentation")
@@ -17,14 +17,27 @@ mixin CareersFamily()
 				li.nav-item(role="presentation")
 					a.nav-link(data-toggle="pill" href="#pillsPeopleOperations" role="tab" aria-controls="pillsPeopleOperations" aria-selected="true") People & Operations
 				li.nav-item(role="presentation")
-					a.nav-link(data-toggle="pill" href="#pillsSales" role="tab" aria-controls="pillsSales" aria-selected="true") Sales
+					a.nav-link.active(data-toggle="pill" href="#pillsSales" role="tab" aria-controls="pillsSales" aria-selected="true") Sales
 				li.nav-item(role="presentation")
 					a.nav-link(data-toggle="pill" href="#pillsSuccess" role="tab" aria-controls="pillsSuccess" aria-selected="true") Success
 			.tab-content#pillsTabContent
-				.tab-pane.fade.show.active#pillsMarketing(role="tabpanel")
+				.tab-pane.fade#pillsMarketing(role="tabpanel")
 				.tab-pane.fade#pillsProduct(role="tabpanel")
 				.tab-pane.fade#pillsRD(role="tabpanel")
 				.tab-pane.fade#pillsPeopleOperations(role="tabpanel")
-					p Unfortunately, there are no current openings in this category, please check back soon again!
-				.tab-pane.fade#pillsSales(role="tabpanel")
+					.no-vacation
+						p Unfortunately, there are no current openings in this category, please check back soon again!
+				.tab-pane.fade.show.active#pillsSales(role="tabpanel")
+					a.h4.text-decoration-none.d-inline-block(href="#") Inside Sales Manager
+					ul.list-vacation
+						li
+							i.i.i-time.i-sm.mr-3
+							| Full Time
+						li
+							i.i.i-map-point.i-sm.mr-3
+							| Tel-Aviv
+						li
+							i.i.i-pan.i-sm.mr-3
+							a(href="#") Apply here
+					.w-75.border-bottom.pt-3
 				.tab-pane.fade#pillsSuccess(role="tabpanel")
