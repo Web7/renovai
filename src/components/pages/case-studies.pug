@@ -1,0 +1,10 @@
+extends ../templates/layout
+include ../organisms/experience-renovai
+include ../organisms/case-studies/case-studies-header
+include ../organisms/case-studies/case-studies-content
+
+block main
+	main
+		+CaseStudiesHeader()
+		+CaseStudiesContent()
+		+ExperienceRenovai()

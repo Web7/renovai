@@ -32,22 +32,32 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			template: './src/components/pages/index.pug',
 			filename: 'index.html',
-			file: require('./src/data/index.json')
+			file: require('./src/data/white-menu.json'),
+			cache: false
 		}),
 		new HtmlWebPackPlugin({
 			template: './src/components/pages/product-page.pug',
 			filename: 'product-page.html',
-			file: require('./src/data/index.json')
+			file: require('./src/data/black-menu.json'),
+			cache: false
 		}),
 		new HtmlWebPackPlugin({
 			template: './src/components/pages/careers.pug',
 			filename: 'careers.html',
-			file: require('./src/data/index.json')
+			file: require('./src/data/black-menu.json'),
+			cache: false
 		}),
 		new HtmlWebPackPlugin({
 			template: './src/components/pages/job-application.pug',
 			filename: 'job-application.html',
-			file: require('./src/data/index.json')
+			file: require('./src/data/black-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/case-studies.pug',
+			filename: 'case-studies.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
