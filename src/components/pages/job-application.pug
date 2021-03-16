@@ -2,7 +2,7 @@ extends ../templates/layout
 include ../organisms/experience-renovai
 
 block main
-	main
+	main.sm-toggle-position
 		section.job-application-section.bg-gradient-blue
 			.container
 				.row
@@ -71,11 +71,11 @@ block main
 								.col-sm-9
 									input.form-control#phone(type="text")
 							.form-group.row
-								label.col-sm-3.col-form-label(for="resume") Resume
+								label.col-sm-3.col-form-label Resume
 									small.text-pink *
 								.col-sm-9.custom-file
 									input.custom-file-input#resume(type="file")
-									label.custom-file-label Upload Resume
+									label.custom-file-label(for="resume") Upload Resume
 							.form-group.row
 								label.col-sm-3.col-form-label(for="linkedIn") LinkedIn
 								.col-sm-9
