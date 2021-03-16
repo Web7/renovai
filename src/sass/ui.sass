@@ -6,3 +6,33 @@
 @media (min-width: 768px)
 	.w-md-auto
 		width: auto !important
+
+.bg-gradient-blue
+	background: linear-gradient(96.7deg, #E6F0FF 6.22%, #FFFFFF 96.06%)
+
+.nav-pills
+	.nav-link
+		background-color: $primary
+		border: 1px solid $primary
+		color: $white
+		margin-right: 11px
+		margin-left: 11px
+		font-family: 'moderat-bold'
+		font-size: 14px
+		font-weight: normal
+		white-space: nowrap
+		&:hover
+			border-color: #61C0FA
+			background-color: #61C0FA
+		&.active
+			background-color: $white
+			border-color: #61C0FA
+			color: #61C0FA
+
+	.nav-item
+		&:first-child
+			.nav-link
+				margin-left: 0
+		&:last-child
+			.nav-link
+				margin-right: 0
