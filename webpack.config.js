@@ -65,6 +65,12 @@ module.exports = {
 			file: require('./src/data/white-menu.json'),
 			cache: false
 		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/case-studies-got-it.pug',
+			filename: 'case-studies-got-it.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
 			chunkFilename: '[id].css'
