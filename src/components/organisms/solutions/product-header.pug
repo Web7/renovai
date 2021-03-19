@@ -2,18 +2,21 @@ mixin ProductHeader()
 	section.product-header
 		.container
 			.row
-				.col-10.text-center.offset-1
+				.col-12.col-lg-10.text-center.offset-lg-1
 					h1.h1 Complete the Look
 					p 2D inspiration images enhancing product focused display offering the best targeted assorted products and color palettes.
 					a.btn.btn-secondary.shadow(href="#") Book a Demo
-					.tablet-container
+					.mobile-content.d-lg-none.pt-6.pb-3
+						img(src="images/mobile-complete-the-look-img.png" alt="" title="")
+					.tablet-container.d-none.d-lg-inline-block
+						img(src="images/complete-the-look-img.jpg" alt="" title="")
 					.row.row-cols-3.counters
 						.col.text-center.mb-5.mb-lg-0
-							.h1(data-counter="30" data-suffix="" data-prefix="%")
+							.h1(data-counter="30" data-suffix="" data-prefix="%") 30%
 							.h5 Revenue Increase
 						.col.text-center.mb-5.mb-lg-0
-							.h1(data-counter="16" data-suffix="" data-prefix="%")
+							.h1(data-counter="16" data-suffix="" data-prefix="%") 16%
 							.h5 Increased CVR
 						.col.text-center.mb-5.mb-lg-0
-							.h1(data-counter="9" data-suffix="" data-prefix="%")
+							.h1(data-counter="9" data-suffix="" data-prefix="%") 9%
 							.h5 Increased AOV

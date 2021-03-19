@@ -18,6 +18,7 @@
 	var windowHeight;
 	var show = true;
 	var isTbcfywCarouselSlick = false;
+	var isSolutionCarouselSlick = false;
 
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
@@ -48,6 +49,23 @@
 					$videoCarousel[0].play();
 				}
 			})
+		}
+	};
+
+	var initSolutionCarousel = function() {
+		var $solutionCarousel = $('.solution-carousel');
+		if ($solutionCarousel.exists()) {
+			if (window.outerWidth <= 425) {
+				$solutionCarousel.slick({
+					autoplay: true,
+					autoplaySpeed: 1000,
+					arrows: false
+				});
+				isSolutionCarouselSlick = true;
+			} else if (isSolutionCarouselSlick === true) {
+				$solutionCarousel.slick('unslick');
+				isSolutionCarouselSlick = false;
+			}
 		}
 	};
 
