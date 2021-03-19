@@ -1,38 +1,78 @@
-.case-studies-header-section
-	background-color: $secondary
-	min-height: 919px
-	height: 919px
-	font-family: 'moderat-light'
-	font-weight: normal
-	font-size: 24px
-	line-height: 32px
-	.h1
-		font-family: 'comfortaa'
-		font-weight: 700
-		font-size: 70px
-		line-height: 84px
-
-.case-studies-item-header-section
-	padding-top: 197px
-	padding-bottom: 336px
-	background: url(../images/case-studies-item-bg.jpg) no-repeat top center
-	min-height: 900px
-	color: $white
-	font-family: 'moderat-light'
-	font-weight: normal
-	font-size: 24px
-	line-height: 32px
-	.h1
-		font-family: 'moderat-bold'
-		font-weight: normal
-		font-size: 58px
-		line-height: 70px
-		margin-bottom: 30px
-	.h3
-		font-family: 'moderat-medium'
+.case-studies
+	&-header-section
+		background-color: $secondary
+		min-height: 919px
+		height: 919px
+		font-family: 'moderat-light'
 		font-weight: normal
 		font-size: 24px
-		line-height: 29px
-	.small
-		font-size: 14px
-		line-height: 17px
+		line-height: 32px
+		.h1
+			font-family: 'comfortaa'
+			font-weight: 700
+			font-size: 70px
+			line-height: 84px
+
+	&-item-header-section
+		padding-top: 197px
+		padding-bottom: 336px
+		background: url(../images/case-studies-item-bg.jpg) no-repeat top center
+		min-height: 900px
+		color: $white
+		font-family: 'moderat-light'
+		font-weight: normal
+		font-size: 24px
+		line-height: 32px
+		.h1
+			font-family: 'moderat-bold'
+			font-weight: normal
+			font-size: 58px
+			line-height: 70px
+			margin-bottom: 30px
+		.h3
+			font-family: 'moderat-medium'
+			font-weight: normal
+			font-size: 24px
+			line-height: 29px
+		.small
+			font-size: 14px
+			line-height: 17px
+
+	&-got-it
+		&-header-section
+			padding-top: 265px
+			padding-bottom: 336px
+			background: url(../images/case-studies-item-bg.jpg) no-repeat top center
+			min-height: 900px
+			color: $white
+			font-family: 'moderat-light'
+			font-weight: normal
+			font-size: 20px
+			line-height: 32px
+			.h1
+				font-family: 'moderat-bold'
+				font-weight: normal
+				font-size: 70px
+				line-height: 84px
+				margin-bottom: 16px
+		&-container
+			position: relative
+			height: 304px
+			&:before
+				content: ""
+				display: block
+				background: url(../images/got-it-left-top.svg) no-repeat 0 0
+				width: 75px
+				height: 61px
+				position: absolute
+				top: 0
+				left: 250px
+			&:after
+				content: ""
+				display: block
+				background: url(../images/got-it-right-bottom.svg) no-repeat 0 0
+				width: 75px
+				height: 61px
+				position: absolute
+				bottom: 0
+				right: 210px
