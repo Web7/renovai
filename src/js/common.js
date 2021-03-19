@@ -17,6 +17,7 @@
 	var counterSectionRcsarTop;
 	var windowHeight;
 	var show = true;
+	var isTbcfywCarouselSlick = false;
 
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
@@ -50,11 +51,31 @@
 		}
 	};
 
+	var initTbcfywCarousel = function() {
+		var $tbcfywCarousel = $('.tbcfyw-carousel');
+		if ($tbcfywCarousel.exists()) {
+			if (window.outerWidth <= 425) {
+				$tbcfywCarousel.slick({
+					autoplay: true,
+					autoplaySpeed: 1000,
+					arrows: false
+				});
+				isTbcfywCarouselSlick = true;
+			} else if (isTbcfywCarouselSlick === true) {
+				$tbcfywCarousel.slick('unslick');
+				isTbcfywCarouselSlick = false;
+			}
+		}
+	};
+
 	$(function () {
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counters = $('.counters');
+
 		$carouselNavy = $('#carouselNavy');
+
+		initTbcfywCarousel();
 
 		if ($counters.exists()) {
 			setTimeout(function(){
@@ -115,6 +136,10 @@
 			}
 			show = false;
 		}
+	});
+
+	$(window).on('resize', function() {
+		initTbcfywCarousel();
 	});
 
 }, window.jQuery, window.Zepto));
