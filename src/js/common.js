@@ -94,6 +94,7 @@
 		$carouselNavy = $('#carouselNavy');
 
 		initTbcfywCarousel();
+		initSolutionCarousel();
 
 		if ($counters.exists()) {
 			setTimeout(function(){
@@ -158,6 +159,7 @@
 
 	$(window).on('resize', function() {
 		initTbcfywCarousel();
+		initSolutionCarousel();
 	});
 
 }, window.jQuery, window.Zepto));
