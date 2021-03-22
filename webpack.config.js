@@ -71,6 +71,18 @@ module.exports = {
 			file: require('./src/data/white-menu.json'),
 			cache: false
 		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/blog.pug',
+			filename: 'blog.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/blog-item.pug',
+			filename: 'blog-item.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
 			chunkFilename: '[id].css'
