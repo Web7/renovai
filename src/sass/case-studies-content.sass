@@ -1,15 +1,24 @@
 .case-studies-item-content-section,
 .case-studies-content-section
-	background: url(../images/case-studies-bg.svg) no-repeat top center
-	margin-top: -455px
-	padding-top: 455px
-	min-height: 911px
+	position: relative
+	padding-top: 200px
+	margin-top: -149px
+	&:before
+		content: ""
+		display: block
+		width: 100vw
+		height: 381px
+		background: url(../images/case-studies-bg.svg) no-repeat top center
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
 	.media
 		border-radius: 8px
 		> img
 			border-radius: 8px 8px 0 0
 		&-body
-			padding: 40px 35px 24px 35px
+			padding: 12px 18px 12px 18px
 			font-family: 'moderat-light'
 			font-weight: normal
 			font-size: 18px
@@ -23,21 +32,31 @@
 				color: $secondary
 
 .case-studies-item-content-section
-	background-image: url(../images/case-studies-blue-bg.svg)
-	margin-top: -355px
+	&:before
+		background: url(../images/case-studies-blue-bg.svg) no-repeat top center
+	//margin-top: -355px
 	.h2
 		font-family: 'comfortaa'
 		font-weight: 700
 		font-size: 50px
 		line-height: 75px
 
-@media (min-width: 992px)
+@media (min-width: 768px)
 	.case-studies-item-content-section,
 	.case-studies-content-section
-		background: url(../images/case-studies-bg.svg) no-repeat top center
 		margin-top: -455px
 		padding-top: 455px
 		min-height: 911px
+		&:before
+			height: 911px
+
+	.case-studies-item-content-section
+		margin-top: -365px
+		padding-top: 355px
+
+@media (min-width: 992px)
+	.case-studies-item-content-section,
+	.case-studies-content-section
 		.media
 			border-radius: 16px
 			> img
