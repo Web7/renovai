@@ -121,7 +121,8 @@
 			$slickLogos.slick({
 				arrows: false,
 				slidesToShow: 5,
-				autoplay: true
+				autoplay: true,
+				autoplaySpeed: 2000
 			});
 		}
 	});
