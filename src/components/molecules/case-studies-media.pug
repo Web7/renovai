@@ -1,7 +1,8 @@
 mixin CaseStudiesMedia()
-	.col-10.offset-1.mb-10
-		.media.shadow-lg.bg-white.align-items-center
-			img(src="images/made-media-img.jpg" alt="" title="")
+	.col-12.col-lg-10.offset-lg-1.mb-10
+		.media.shadow-lg.bg-white.align-items-center.flex-column.flex-lg-row
+			img.d-none.d-lg-inline-block(src="images/made-media-img.jpg" alt="" title="")
+			img.d-lg-none.w-100(src="images/made-media-mobile-img.jpg" alt="" title="")
 			.media-body
 				img.mb-3(src="images/made-logo-media.svg" alt="" title="")
 				h2.h2 Boosted engagement and increased revenue with renovai's “Shop the Room"
