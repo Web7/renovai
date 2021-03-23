@@ -32,14 +32,27 @@
 				color: $secondary
 
 .case-studies-item-content-section
+	padding-top: 139px
 	&:before
 		background: url(../images/case-studies-blue-bg.svg) no-repeat top center
-	//margin-top: -355px
+		background-size: cover
+		height: 240px
+	.h3
+		font-family: 'moderat-medium'
+		font-weight: normal
+		font-size: 24px
+		line-height: 30px
+		letter-spacing: -0.01em
 	.h2
 		font-family: 'comfortaa'
 		font-weight: 700
-		font-size: 50px
-		line-height: 75px
+		font-size: 24px
+		line-height: 32px
+	.small
+		font-family: 'moderat-light'
+		font-weight: normal
+		font-size: 16px
+		line-height: 24px
 
 @media (min-width: 768px)
 	.case-studies-item-content-section,
@@ -72,3 +85,8 @@
 					font-size: 32px
 					line-height: 40px
 					letter-spacing: -0.01em
+	.case-studies-item-content-section
+		.h2
+			font-size: 50px
+			line-height: 75px
+			color: $white
