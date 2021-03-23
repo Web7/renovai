@@ -6,7 +6,7 @@ block main
 		section.job-application-section.bg-gradient-blue
 			.container
 				.row
-					.col-10
+					.col-12.col-md-10
 						h1.h1.mb-3 Want to join the
 							img(src="images/logo-black.svg" alt="" title="")
 							| family?
@@ -94,8 +94,11 @@ block main
 									.custom-file
 										input.custom-file-input#coverLetter(type="file")
 										label.custom-file-label(for="coverLetter") Upload Cover Letter
-								.col-sm-9.offset-3.mt-6
-									button.btn.btn-secondary.btn-icon.btn-lg.shadow(type="submit" disabled)
+								.col-sm-9.offset-sm-3.mt-6.text-center.text-md-left
+									button.btn.btn-secondary.btn-icon.shadow.d-md-none(type="submit" disabled)
+										span Submit Application
+										i.i.i-sm.i-right-arrow
+									button.btn.btn-secondary.btn-icon.btn-lg.shadow.d-none.d-md-inline-block(type="submit" disabled)
 										span Submit Application
 										i.i.i-sm.i-right-arrow
 		+ExperienceRenovai()
