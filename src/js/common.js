@@ -127,6 +127,21 @@
 		}
 	});
 
+	$(document).on('click', '.careers-grandmother-container', function(){
+		if (window.outerWidth > 425) {
+			return;
+		}
+		var $this = $(this);
+		var $careersGrandmotherLinkActive = $this.find('.careers-grandmother-link.active');
+		var $careersGrandmotherLinkNext = $careersGrandmotherLinkActive.next('.careers-grandmother-link').exists() ? $careersGrandmotherLinkActive.next('.careers-grandmother-link') : $this.find('.careers-grandmother-link').first();
+		var $beTextActive = $this.find('.be-text.active');
+		var $beTextNext = $beTextActive.next('.be-text').exists() ? $beTextActive.next('.be-text') : $this.find('.be-text').first();
+		$careersGrandmotherLinkActive.removeClass('active');
+		$beTextActive.removeClass('active');
+		$careersGrandmotherLinkNext.addClass('active');
+		$beTextNext.addClass('active');
+	});
+
 	$(document).on('mouseover', '.careers-grandmother-link', function(){
 		$(this).closest('.careers-grandmother-container').addClass('hover');
 	});
