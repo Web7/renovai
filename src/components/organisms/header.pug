@@ -1,4 +1,6 @@
-header.d-flex.align-items-md-center.sm-toggle-menu.position-static.w-100.shadow.black-header-menu
+- let data = self.htmlWebpackPlugin.options.file
+
+header.d-flex.align-items-md-center.sm-toggle-menu.position-static.w-100.shadow(class= data.isHoverMenu ? 'black-header-menu': '')
 	.container
 		nav.navbar.navbar-expand-md.p-0.headerNavBar.no-transition
 			a.header-logo(href="#")

@@ -25,70 +25,6 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 	},
 
-	plugins: [
-		new CopyWebpackPlugin({
-			patterns: configureCopy()
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/index.pug',
-			filename: 'index.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/product-page.pug',
-			filename: 'product-page.html',
-			file: require('./src/data/black-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/careers.pug',
-			filename: 'careers.html',
-			file: require('./src/data/black-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/job-application.pug',
-			filename: 'job-application.html',
-			file: require('./src/data/black-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/case-studies.pug',
-			filename: 'case-studies.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/case-studies-item.pug',
-			filename: 'case-studies-item.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/case-studies-got-it.pug',
-			filename: 'case-studies-got-it.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/blog.pug',
-			filename: 'blog.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/components/pages/blog-item.pug',
-			filename: 'blog-item.html',
-			file: require('./src/data/white-menu.json'),
-			cache: false
-		}),
-		new MiniCssExtractPlugin({
-			filename: 'css/style.css',
-			chunkFilename: '[id].css'
-		})
-	],
-
 	// plugins: [
 	// 	new webpack.ProgressPlugin(),
 	// 	new MiniCssExtractPlugin({filename: 'common.[contenthash].css'})
@@ -159,6 +95,70 @@ module.exports = {
 			}
 		]
 	},
+
+	plugins: [
+		new CopyWebpackPlugin({
+			patterns: configureCopy()
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/index.pug',
+			filename: 'index.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/product-page.pug',
+			filename: 'product-page.html',
+			file: require('./src/data/black-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/careers.pug',
+			filename: 'careers.html',
+			file: require('./src/data/black-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/job-application.pug',
+			filename: 'job-application.html',
+			file: require('./src/data/black-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/case-studies.pug',
+			filename: 'case-studies.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/case-studies-item.pug',
+			filename: 'case-studies-item.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/case-studies-got-it.pug',
+			filename: 'case-studies-got-it.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/blog.pug',
+			filename: 'blog.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/blog-item.pug',
+			filename: 'blog-item.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new MiniCssExtractPlugin({
+			filename: 'css/style.css',
+			chunkFilename: '[id].css'
+		})
+	],
 
 	optimization: {
 		minimizer: [new TerserPlugin()],
