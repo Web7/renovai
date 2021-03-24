@@ -1,10 +1,12 @@
 .careers-grandmother
 	background: url(../images/careers-grandmother.png) no-repeat 0 0
-	width: 790px
-	height: 886px
+	background-size: contain
+	width: 320px
+	height: 359px
 	position: absolute
 	bottom: 0
-	left: 277px
+	left: 0
+	right: 0
 	margin: 0 auto
 	z-index: 1
 	&-pillar-container
@@ -47,7 +49,8 @@
 			z-index: -0
 			transition: left ease-out 400ms, top ease-out 400ms
 	&-section
-		height: 1077px
+		width: 100%
+		height: 600px
 		background-color: $primary
 		color: $white
 		overflow: hidden
@@ -68,8 +71,8 @@
 				font-size: 50px
 	&-container
 		position: absolute
-		width: 1440px
-		height: 886px
+		width: 320px
+		height: 600px
 		bottom: 0
 		left: 0
 		right: 0
@@ -408,3 +411,415 @@
 	&-exceptional-text
 		top: 61px
 		left: 888px
+
+@media (min-width: 768px)
+	.careers-grandmother
+		background: url(../images/careers-grandmother.png) no-repeat 0 0
+		width: 790px
+		height: 886px
+		position: absolute
+		bottom: 0
+		left: 277px
+		margin: 0 auto
+		z-index: 1
+		&-pillar-container
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			z-index: 0
+			font-family: 'moderat-light'
+			font-weight: normal
+			font-size: 25px
+			line-height: 35px
+			&:before
+				content: ""
+				display: block
+				width: 448px
+				height: 1034px
+				background-color: $pink
+				border-radius: 1000px
+				mix-blend-mode: normal
+				position: absolute
+				transform: rotate(46.69deg)
+				left: 305px
+				top: 38px
+				z-index: -1
+			&:after
+				content: ""
+				display: block
+				width: 443px
+				height: 1176px
+				background-color: $secondary
+				border-radius: 300px
+				mix-blend-mode: screen
+				position: absolute
+				left: 523px
+				top: 130px
+				z-index: -0
+				transition: left ease-out 400ms, top ease-out 400ms
+		&-section
+			height: 1077px
+			background-color: $primary
+			color: $white
+			overflow: hidden
+			.title
+				font-family: 'moderat-light'
+				font-weight: normal
+				font-size: 40px
+				line-height: 88px
+				position: absolute
+				left: 0
+				right: 0
+				top: -151px
+				margin: 0 auto
+				transition: left ease-out 400ms, top ease-out 400ms
+				b, strong
+					font-family: 'moderat-bold'
+					font-weight: normal
+					font-size: 50px
+		&-container
+			position: absolute
+			width: 1440px
+			height: 886px
+			bottom: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			&.hover
+				.careers-grandmother-link:not(:hover)
+					opacity: 0
+					z-index: -1
+		&-link
+			position: absolute
+			color: $white
+			font-family: 'moderat-regular'
+			font-weight: 400
+			font-size: 30px
+			line-height: 64px
+			height: 73px
+			z-index: 2
+			transition: color ease-out 400ms, font-weight ease-out 400ms, opacity ease-out 400ms
+			&:hover
+				font-weight: 700
+				text-decoration: none
+				color: $blue3
+				z-index: 3
+				&:before,
+				&:after
+					opacity: 0
+			&:before,
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				background-color: $white
+				opacity: 1
+				transition: opacity ease-out 400ms
+			span
+				width: 100%
+				display: block
+				position: absolute
+				white-space: nowrap
+				transition: top ease-out 400ms, left ease-out 400ms
+				top: 0
+				left: 0
+			&.be
+				&-innovative-link
+					width: 182px
+					left: 348px
+					top: 45px
+					&:before
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						right: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 96px
+						height: 2px
+						right: -118px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 832px
+								top: -30px
+							.be-innovative-text
+								opacity: 1
+						span
+							top: -58px
+							left: -188px
+						& ~ .title
+							left: -422px
+							top: -121px
+				&-fast-link
+					width: 99px
+					left: 208px
+					top: 240px
+					&:before
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						right: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 96px
+						height: 2px
+						right: -118px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 773px
+								top: 298px
+							.be-fast-text
+								opacity: 1
+						span
+							top: -175px
+							left: -48px
+						& ~ .title
+							left: -422px
+							top: -81px
+				&-accountable-link
+					width: 215px
+					left: 169px
+					top: 607px
+					&:before
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						right: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 156px
+						height: 2px
+						right: -178px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 109px
+								top: 269px
+							.be-accountable-text
+								opacity: 1
+						span
+							top: -510px
+							left: -9px
+						& ~ .title
+							left: -422px
+							top: -81px
+				&-a-team-player-link
+					width: 231px
+					left: 209px
+					top: 753px
+					&:before
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						right: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 52px
+						height: 2px
+						right: -74px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 720px
+								top: -145px
+							.be-a-team-player-text
+								opacity: 1
+						span
+							top: -743px
+							left: -50px
+						& ~ .title
+							left: -422px
+							top: -81px
+
+				&-data-driven-link
+					width: 202px
+					left: 1049px
+					top: 147px
+					&:before
+						width: 186px
+						height: 2px
+						left: -208px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						left: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 178px
+								top: 15px
+							.be-data-driven-text
+								opacity: 1
+						span
+							top: -160px
+							left: -155px
+						& ~ .title
+							left: -422px
+							top: -81px
+				&-happy-link
+					width: 131px
+					left: 1076px
+					top: 266px
+					&:before
+						width: 271px
+						height: 2px
+						left: -293px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						left: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 800px
+								top: 207px
+							.be-happy-text
+								opacity: 1
+						span
+							top: -264px
+							left: -174px
+						& ~ .title
+							left: -422px
+							top: -81px
+				&-passionate-link
+					width: 189px
+					left: 1066px
+					top: 452px
+					&:before
+						width: 310px
+						height: 2px
+						left: -332px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						left: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 160px
+								top: 119px
+							.be-passionate-text
+								opacity: 1
+						span
+							top: -382px
+							left: -178px
+						& ~ .title
+							left: -422px
+							top: -81px
+				&-exceptional-link
+					width: 202px
+					left: 1066px
+					top: 681px
+					&:before
+						width: 204px
+						height: 2px
+						left: -226px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:after
+						width: 11px
+						height: 11px
+						border-radius: 100%
+						left: -22px
+						top: 0
+						bottom: 0
+						margin: auto 0
+					&:hover
+						& ~ .careers-grandmother-pillar-container
+							&:after
+								left: 706px
+								top: 228px
+							.be-exceptional-text
+								opacity: 1
+						span
+							top: -670px
+							left: -179px
+						& ~ .title
+							left: -422px
+							top: -81px
+	.be
+		&-innovative-text,
+		&-fast-text,
+		&-accountable-text,
+		&-a-team-player-text,
+		&-data-driven-text,
+		&-happy-text,
+		&-passionate-text,
+		&-exceptional-text
+			position: absolute
+			width: 392px
+			opacity: 0
+			transition: opacity ease-out 400ms
+	.be
+		&-innovative-text
+			top: 44px
+			left: 160px
+		&-fast-text
+			top: 120px
+			left: 160px
+		&-accountable-text
+			top: 151px
+			left: 160px
+		&-a-team-player-text
+			top: 67px
+			left: 161px
+		&-data-driven-text
+			top: 40px
+			left: 895px
+		&-happy-text
+			top: 53px
+			left: 904px
+		&-passionate-text
+			top: 119px
+			left: 888px
+		&-exceptional-text
+			top: 61px
+			left: 888px
