@@ -154,6 +154,12 @@ module.exports = {
 			file: require('./src/data/white-menu.json'),
 			cache: false
 		}),
+		new HtmlWebPackPlugin({
+			template: './src/components/pages/news.pug',
+			filename: 'news.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/style.css',
 			chunkFilename: '[id].css'

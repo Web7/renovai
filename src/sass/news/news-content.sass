@@ -1,0 +1,45 @@
+.news-content-section
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		margin-top: -196px
+		min-height: 415px
+		background: url(../images/mold-ligth-blue-test-top.svg) no-repeat bottom center, linear-gradient(96.7deg, #E6F0FF 6.22%, #FFFFFF 96.06%)
+
+@media (min-width: 768px)
+	.news-content-section
+		&:before
+			margin-top: -431px
+			min-height: 911px
+			margin-bottom: -380px
+		.media
+			background: $white
+			box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802)
+			border-radius: 20px
+			&-body
+				padding: 35px 40px
+				color: $gray-200
+				font-family: 'moderat-light'
+				font-weight: normal
+				font-size: 22px
+				line-height: 35px
+			.h3
+				font-family: 'moderat-bold'
+				font-weight: normal
+				font-size: 35px
+				line-height: 46px
+				color: $body-color
+			.news-item
+				&-image
+					background: rgba(25,25,87,0.75)
+					max-width: 40%
+					flex: 0 0 40%
+					min-height: 459px
+					border-radius: 20px 0 0 20px
+				&-date
+					font-family: 'moderat-mono-regular'
+					font-weight: normal
+					font-size: 16px
+					line-height: 28px
+					margin-bottom: 29px
