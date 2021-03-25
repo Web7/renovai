@@ -1,6 +1,10 @@
 extends ../templates/layout
 include ../organisms/experience-renovai
+include ../organisms/blog/blog-header
+include ../organisms/blog/gtri
 
 block main
 	main
+		+BlogHeader()
+		+GetTheRightInsight()
 		+ExperienceRenovai()
