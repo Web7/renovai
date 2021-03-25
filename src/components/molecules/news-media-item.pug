@@ -1,11 +1,11 @@
 mixin NewsMediaItem(data)
-	div&attributes(attributes)
-		.media.align-items-stretch(class= data.isVertical ? 'flex-column': '')
-			.news-item-image
-				img(src="" alt="" title="")
-			.media-body.d-flex.flex-column
+	.media.align-items-stretch(class= data.isVertical ? 'flex-column' : '')
+		.news-item-image
+			img(src="" alt="" title="")
+		.media-body.d-flex.flex-column
+			if (data.date)
 				.news-item-date= data.date
-				.h3= data.title
-				p= data.description
-				.mt-auto
-					a.text-decoration-underline.news-item-link(href="#") Read more
+			.h3= data.title
+			p= data.description
+			.mt-auto
+				a.text-decoration-underline.news-item-link(href="#") Read more
