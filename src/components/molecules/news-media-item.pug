@@ -1,8 +1,11 @@
-mixin NewsMediaItem()
-	.media.align-items-stretch
-		.news-item-image
-			img(src="" alt="" title="")
-		.media-body
-			.news-item-date 3rd May 13, 2020
-			.h3 RenovAI helps retailers offer automated interior design advice to their customers
-			p Alon Gilady, CEO of RenovAI, told me his startup is trying to solve the problem that many of us face when we’re moving into a new home — we aren’t interior designers, but we can’t afford to hire real designers...
+mixin NewsMediaItem(data)
+	div&attributes(attributes)
+		.media.align-items-stretch(class= data.isVertical ? 'flex-column': '')
+			.news-item-image
+				img(src="" alt="" title="")
+			.media-body.d-flex.flex-column
+				.news-item-date= data.date
+				.h3= data.title
+				p= data.description
+				.mt-auto
+					a.text-decoration-underline.news-item-link(href="#") Read more
