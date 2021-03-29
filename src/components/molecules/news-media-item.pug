@@ -1,11 +1,12 @@
 mixin NewsMediaItem(data)
-	.media.align-items-stretch(class= data.isVertical ? 'flex-column' : '')
+	.media.align-items-stretch(class= data.isVertical ? 'flex-column': 'flex-column flex-lg-row')
 		.news-item-image
 			img(src="" alt="" title="")
 		.media-body.d-flex.flex-column
 			if (data.date)
 				.news-item-date= data.date
 			.h3= data.title
-			p= data.description
+			.d-none.d-md-block
+				p= data.description
 			.mt-auto
 				a.text-decoration-underline.news-item-link(href="#") Read more
