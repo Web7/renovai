@@ -96,10 +96,29 @@ block main
 										input.custom-file-input#coverLetter(type="file")
 										label.custom-file-label(for="coverLetter") Upload Cover Letter
 								.col-sm-9.offset-sm-3.mt-6.text-center.text-md-left
-									button.btn.btn-secondary.btn-icon.shadow.d-md-none(type="submit" disabled)
+									button.btn.btn-secondary.btn-icon.shadow.d-md-none(type="button" data-toggle="modal" data-target="#jobApplicationModal" disabled)
 										span Submit Application
 										i.i.i-sm.i-right-arrow
-									button.btn.btn-secondary.btn-icon.btn-lg.shadow.d-none.d-md-inline-block(type="submit" disabled)
+									button.btn.btn-secondary.btn-icon.btn-lg.shadow.d-none.d-md-inline-block(type="button" data-toggle="modal" data-target="#jobApplicationModal")
 										span Submit Application
 										i.i.i-sm.i-right-arrow
 		+ExperienceRenovai()
+	.modal.fade#jobApplicationModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+		.modal-dialog.modal-dialog-centered.modal-lg
+			.modal-content.job-application-modal
+				.modal-header
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					.text-center
+						h1.h1 Thank you for submitting your application!
+						p.mb-5 We are excited that you are interested in joining our journey!
+							br
+							| In the meantime, we encourage you to explore our website to have a better understanding of what it is we do here and our company's DNA :)
+							br
+							| Thanks again, and we will be in touch shortly.
+							br
+							br
+							|
+							i - renovai's hiring team
+						a.btn.btn-light(href="#") Explore
