@@ -21,7 +21,7 @@ block main
 							p.d-none.d-lg-block Made.com managed to improve their revenue increase by a whopping 13%, Average order value by 12.4% and double average time on site.
 						.col-lg-6.text-center.text-lg-left
 							.h3 Get your case study here:
-							form(action="case-studies-got-it.html")
+							form
 								.form-group.row
 									.col-12
 										input.form-control(type="text" placeholder="Full Name")
@@ -34,4 +34,17 @@ block main
 								p.small.mb-5 We collect the information you provide here in order to send you your copy of the case study, don’t worry, we are not into spamming! You may unsubscribe from these communications at any time.
 								.form-group.row
 									.col-12
-										button.btn.btn-pink.btn-lg.w-100 Send to mail
+										button.btn.btn-pink.btn-lg.w-100(type="button" data-toggle="modal" data-target="#caseStudiesGotItModal") Send to mail
+	.modal.fade#caseStudiesGotItModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+		.modal-dialog.modal-dialog-centered.modal-xl
+			.modal-content.case-studies-item-modal
+				.modal-header
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					.case-studies-got-it-container.text-center
+						h1.h1 Got it!
+						p Your copy will be sent to your email shortly, we hope you will find it insightful.
+							br
+							| Thank you for your interest in renovai!
+						a.btn.btn-secondary(href="#") See more
