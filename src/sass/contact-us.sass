@@ -2,6 +2,7 @@
 	&-header
 		&-section
 			color: $white
+			//position: relative
 			&:after
 				content: ""
 				display: block
@@ -24,6 +25,30 @@
 			line-height: 25px
 			padding-top: 92px
 			background-color: $primary
+			//overflow: hidden
+			//position: relative
+			&:before
+				content: ""
+				display: block
+				background: $pink
+				width: 112px
+				height: 299px
+				border-radius: 394px
+				position: absolute
+				mix-blend-mode: screen
+				right: -69px
+				top: -124px
+			&:after
+				content: ""
+				display: block
+				background: $purple3
+				width: 85px
+				height: 225px
+				border-radius: 191px
+				position: absolute
+				mix-blend-mode: screen
+				right: 15px
+				top: -140px
 		&-content
 			position: relative
 			z-index: 2
@@ -60,6 +85,18 @@
 				font-size: 24px
 				line-height: 32px
 				padding-top: 138px
+				&:before
+					width: 209px
+					height: 554px
+					border-radius: 394px
+					right: -13px
+					top: -171px
+				&:after
+					width: 128px
+					height: 339px
+					border-radius: 289px
+					right: 132px
+					top: -110px
 		&-content-section
 			font-size: 20px
 			line-height: 32px

@@ -2,15 +2,19 @@ extends ../templates/layout
 include ../organisms/experience-renovai
 
 block main
-	main
+	main.overflow-hidden.position-relative
 		section.contact-us-header-section
 			.contact-us-header-container
 				.container
 					.row.contact-us-header-content
-						.col-12.col-md-5
+						.col-12.col-md-5.text-center.text-md-left
 							h1.h1 Contact Us
 							p.mb-md-6 If you’re interested in visual AI technology, want to see how our platform works, or to simply chat with our team, fill out the form and we’ll get back to you.
 							p You can also find us on social media:
+							.mb-4
+								a.i.i-fb.i-social.mr-3.i-lg(href="#")
+								a.i.i-youtube.i-social.mr-3.i-lg(href="#")
+								a.i.i-in.i-social.i-lg(href="#")
 						.col-12.col-md-5.offset-md-1
 							form(action="case-studies-got-it.html")
 								.form-group.row
