@@ -1,0 +1,11 @@
+include ../../molecules/blog-carousel-item
+
+mixin BlogCarousel()
+	section.blog-carousel-section
+		.container
+			+BlogCarouselItem({
+				titleImage: 'Flat. Out.\n Better.',
+				date: 'Dec 9th, 2020',
+				title: 'The worst 3D ideas and how they lost the battle against 2D',
+				description: 'They said 2020 was a time to settle down and appreciate what we have, so we gave it an honest shot. As an AI company, we tend...'
+			})

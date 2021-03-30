@@ -1,0 +1,14 @@
+mixin BlogCarouselItem(data)
+	.media.align-items-stretch.flex-column
+		.blog-carousel-item-image
+			.img(style="background-image: url(images/news-item-background.jpg)")
+			.title
+				div= data.titleImage
+		.media-body.d-flex.flex-column
+			if (data.date)
+				.blog-carousel-item-date= data.date
+			.h3= data.title
+			.d-none.d-md-block
+				p= data.description
+			.mt-auto
+				a.text-decoration-underline.blog-carousel-item-link(href="#") Read more

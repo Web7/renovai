@@ -2,9 +2,11 @@ extends ../templates/layout
 include ../organisms/experience-renovai
 include ../organisms/blog/blog-header
 include ../organisms/blog/gtri
+include ../organisms/blog/blog-carousel
 
 block main
 	main
 		+BlogHeader()
 		+GetTheRightInsight()
+		+BlogCarousel()
 		+ExperienceRenovai()
