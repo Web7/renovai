@@ -5,10 +5,19 @@
 		padding: 10px 15px
 	&-content
 		border-width: 1px
+		.close
+			font-family: 'moderat-light'
+			font-size: 2rem
+			opacity: 1 !important
 	&-body
 		padding: 10px
+	&-header
+		padding-right: 15px
+		padding-top: 10px
 	.case-studies
 		&-item-modal
+			background: url(../images/case-studies-item-bg.jpg) no-repeat top center
+			background-size: cover
 			font-family: 'moderat-light'
 			font-weight: normal
 			font-size: 18px
@@ -31,11 +40,9 @@
 				line-height: 20px
 
 		&-got-it
-			&-header-section
-				padding-top: 141px
-				padding-bottom: 257px
+			&-modal
 				background: url(../images/case-studies-item-bg.jpg) no-repeat top center
-				min-height: 595px
+				background-size: cover
 				color: $white
 				font-family: 'moderat-light'
 				font-weight: normal
@@ -47,8 +54,6 @@
 					font-size: 40px
 					line-height: 55px
 					margin-bottom: 16px
-				~ .case-studies-item-content-section
-					padding-top: 125px
 
 @media (min-width: 768px)
 	.modal
@@ -62,21 +67,17 @@
 				font-size: 24px
 				line-height: 32px
 				.h1
-					font-size: 70px
-					line-height: 84px
+					font-size: 52px
+					line-height: 62px
+					margin-bottom: 30px
 			&-got-it
-				&-header-section
-					padding-top: 265px
-					padding-bottom: 336px
-					min-height: 900px
+				&-modal
 					font-size: 20px
 					line-height: 32px
 					.h1
 						font-size: 70px
 						line-height: 84px
 						margin-bottom: 16px
-					~ .case-studies-item-content-section
-						padding-top: 355px
 
 @media (min-width: 992px)
 	.modal
