@@ -84,6 +84,9 @@
 
 .form-control
 	box-shadow: none !important
+	height: 35px
+	font-size: 18px
+	padding: 10px 15px
 	&::placeholder
 		font-family: 'moderat-light'
 
@@ -92,3 +95,8 @@ textarea
 		border-radius: 10px
 		resize: vertical
 		min-height: 160px
+
+@media (min-width: 768px)
+	.form-control
+		height: 55px
+		padding: 16px 24px

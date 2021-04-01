@@ -87,6 +87,7 @@
 	};
 
 	$(function () {
+		var $bookADemoCarousel = $('.book-a-demo-carousel');
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counters = $('.counters');
@@ -95,6 +96,15 @@
 
 		initTbcfywCarousel();
 		initSolutionCarousel();
+
+		if ($bookADemoCarousel.exists()) {
+			$bookADemoCarousel.slick({
+				arrows: false,
+				slidesToShow: 1,
+				autoplay: true,
+				autoplaySpeed: 2000
+			})
+		}
 
 		if ($counters.exists()) {
 			setTimeout(function(){
