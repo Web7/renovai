@@ -161,6 +161,12 @@ module.exports = {
 			cache: false
 		}),
 		new HtmlWebPackPlugin({
+			template: './src/components/pages/page-not-found.pug',
+			filename: 'page-not-found.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
 			template: './src/components/pages/book-a-demo.pug',
 			filename: 'book-a-demo.html',
 			file: require('./src/data/black-menu.json'),
