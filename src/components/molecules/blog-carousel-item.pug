@@ -6,7 +6,9 @@ mixin BlogCarouselItem(data)
 				div= data.titleImage
 		.media-body.d-flex.flex-column
 			if (data.date)
-				.blog-carousel-item-date= data.date
+				.blog-carousel-item-date.d-flex.justify-content-between
+					div= data.readTime
+					div= data.date
 			.h3= data.title
 			.d-none.d-md-block
 				p= data.description

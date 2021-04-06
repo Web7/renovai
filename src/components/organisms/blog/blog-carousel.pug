@@ -3,9 +3,32 @@ include ../../molecules/blog-carousel-item
 mixin BlogCarousel()
 	section.blog-carousel-section
 		.container
-			+BlogCarouselItem({
-				titleImage: 'Flat. Out.\n Better.',
-				date: 'Dec 9th, 2020',
-				title: 'The worst 3D ideas and how they lost the battle against 2D',
-				description: 'They said 2020 was a time to settle down and appreciate what we have, so we gave it an honest shot. As an AI company, we tend...'
-			})
+			.blog-carousel
+				+BlogCarouselItem({
+					titleImage: 'Flat. Out.\n Better.',
+					date: 'Dec 9th, 2020',
+					readTime: '3 min read',
+					title: 'The worst 3D ideas and how they lost the battle against 2D',
+					description: 'They said 2020 was a time to settle down and appreciate what we have, so we gave it an honest shot. As an AI company, we tend...'
+				})
+				+BlogCarouselItem({
+					titleImage: 'Attention Please!',
+					date: 'Nov 3rd, 2020',
+					readTime: '3 min read',
+					title: 'From interaction to behavior analysis, we break down...',
+					description: 'Netflix CEO Reid Hastings famously said in 2019 that he is more worried about Fortnite than other streaming competitors like...'
+				})
+				+BlogCarouselItem({
+					titleImage: 'Flat. Out.\n Better.',
+					date: 'Dec 9th, 2020',
+					readTime: '3 min read',
+					title: 'The worst 3D ideas and how they lost the battle against 2D',
+					description: 'They said 2020 was a time to settle down and appreciate what we have, so we gave it an honest shot. As an AI company, we tend...'
+				})
+				+BlogCarouselItem({
+					titleImage: 'Curing \n"Purchase Paralysis"',
+					date: 'Dec 3rd, 2020',
+					readTime: '3 min read',
+					title: 'Consumers patterns and habits in their online quest for the perfect furniture',
+					description: 'Regardless of industry, consumers today are faced with an overwhelming array of choice while online shopping. The theory of...'
+				})

@@ -24,24 +24,25 @@ header
 		margin-right: 40px
 	&-nav
 		background-color: $white
-		min-height: 60px
 		display: flex
 		align-items: center
 		margin: 0 -16px
 		padding: 60px 0 33px 0
 		margin-top: -60px
+		min-height: 100vh
 		a:not(.btn)
-			font-family: 'moderat-black'
+			font-family: 'moderat-bold'
 			color: $body-color
 			font-size: 20px
 			line-height: 24px
 			&.active
-				font-family: 'moderat-black'
+				font-family: 'moderat-bold'
 		.btn-fixed
 			display: none
 		.nav
 			&-item
 				box-sizing: content-box
+				width: 100vw
 			&-link
 				display: inline-block
 				padding: 5px 0 3px 0
@@ -199,6 +200,7 @@ header
 					padding-right: 16px
 					padding-top: 15px
 					padding-bottom: 15px
+					width: initial
 				&-link
 					padding: 5px 0 3px 0 !important
 					margin-bottom: 0

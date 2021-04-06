@@ -91,11 +91,21 @@
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counters = $('.counters');
+		var $blogCarousel = $('.blog-carousel');
 
 		$carouselNavy = $('#carouselNavy');
 
 		initTbcfywCarousel();
 		initSolutionCarousel();
+
+		if ($blogCarousel.exists()) {
+			$blogCarousel.slick({
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			});
+		}
 
 		if ($bookADemoCarousel.exists()) {
 			$bookADemoCarousel.slick({
