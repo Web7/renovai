@@ -179,6 +179,12 @@ module.exports = {
 			cache: false
 		}),
 		new HtmlWebPackPlugin({
+			template: './src/components/pages/contact-thank-you.pug',
+			filename: 'contact-thank-you.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
 			template: './src/components/pages/about.pug',
 			filename: 'about.html',
 			file: require('./src/data/black-menu.json'),
