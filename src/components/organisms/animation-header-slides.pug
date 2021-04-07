@@ -4,24 +4,25 @@ include ../molecules/animation-header-slide-03
 include ../molecules/animation-header-slide-04
 
 mixin AnimationHeaderSlides()
-	section.animation-header-section.bg-primary.position-relative
+	section.animation-header-section.bg-primary.position-relative.overflow-hidden
 		.container.position-relative
 			.animation-header-text AI Personal Designer
 				br
 				| for Retailers
 				br
 				a.btn.btn-secondary.shadow.mt-2(href="book-a-demo.html") Book a Demo
-		.pillar-container.overflow-hidden.w-100.h-100.animation-header-slide
-			.pillar-left
-			.pillar-center
-			.pillar-right
-		+AnimationHeaderSlide01()
-		+AnimationHeaderSlide02()
-		+AnimationHeaderSlide03()
-		+AnimationHeaderSlide04()
-		.animation-plus-container
-			.animation-plus.s-1
-			.animation-plus.s-2
-			.animation-plus.s-3
-			.animation-plus.s-4
-			.animation-plus.s-5
+		.animation-header-container
+			.pillar-container.w-100.h-100.animation-header-slide
+				.pillar-left
+				.pillar-center
+				.pillar-right
+			+AnimationHeaderSlide01()
+			+AnimationHeaderSlide02()
+			+AnimationHeaderSlide03()
+			+AnimationHeaderSlide04()
+			.animation-plus-container
+				.animation-plus.s-1
+				.animation-plus.s-2
+				.animation-plus.s-3
+				.animation-plus.s-4
+				.animation-plus.s-5
