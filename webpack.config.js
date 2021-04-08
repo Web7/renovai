@@ -185,6 +185,12 @@ module.exports = {
 			cache: false
 		}),
 		new HtmlWebPackPlugin({
+			template: './src/components/pages/reports-white-papers.pug',
+			filename: 'reports-white-papers.html',
+			file: require('./src/data/white-menu.json'),
+			cache: false
+		}),
+		new HtmlWebPackPlugin({
 			template: './src/components/pages/about.pug',
 			filename: 'about.html',
 			file: require('./src/data/black-menu.json'),
