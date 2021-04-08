@@ -2,7 +2,8 @@ extends ../templates/layout
 include ../organisms/experience-renovai
 
 block main
-		section.dark-blue-section
+	main
+		section.dark-blue-section.white-end
 				.container
 					.row.justify-content-center
 						.col-12.text-center
@@ -11,5 +12,24 @@ block main
 								| COMING SOON!
 							p After working with major lifestyle brands, we are putting together all our findings based on analysis conducted on millions of sessions, from best sellers through styles to complete room settings.
 							p.mb-6 Sign up to receive all the information, trends and the opportunities seized by leading retailers leveraging our solutions to engage life-long brand ambassadors.
-							a.btn.btn-light(href="/") Explore
+							a.btn.btn-light(href="#") Get early access
 		+ExperienceRenovai()
+	.modal.fade#reportsWhitePapersModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+		.modal-dialog.modal-dialog-centered.modal-lg
+			.modal-content.job-application-modal
+				.modal-header
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					.text-center
+						h1.h1 The renovai report
+						p.mb-5 We are excited that you are interested in joining our journey!
+							br
+							| In the meantime, we encourage you to explore our website to have a better understanding of what it is we do here and our company's DNA :)
+							br
+							| Thanks again, and we will be in touch shortly.
+							br
+							br
+							|
+							i - renovai's hiring team
+						a.btn.btn-light(href="#") Explore
