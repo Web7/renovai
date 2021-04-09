@@ -101,8 +101,9 @@
 		if ($blogCarousel.exists()) {
 			$blogCarousel.slick({
 				arrows: false,
+				variableWidth: true,
 				centerMode: true,
-				centerPadding: '40px',
+				centerPadding: "0px",
 				slidesToShow: 3
 			});
 		}
