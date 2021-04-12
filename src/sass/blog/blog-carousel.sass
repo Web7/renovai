@@ -11,6 +11,7 @@
 				&:nth-child(even)
 					padding-left: 56px
 			.media
+				height: 100%
 				position: relative
 				background: $white
 				border-radius: 25px
@@ -45,7 +46,27 @@
 					border-radius: 25px
 					box-shadow: 0 154.43px 123.544px rgba(0, 0, 0, 0.07), 0 64.5173px 51.6139px rgba(0, 0, 0, 0.0503198), 0 34.494px 27.5952px rgba(0, 0, 0, 0.0417275), 0 19.3371px 15.4697px rgba(0, 0, 0, 0.035), 0 10.2698px 8.21582px rgba(0, 0, 0, 0.0282725), 0 4.27348px 3.41879px rgba(0, 0, 0, 0.0196802)
 					z-index: -2
+				.avatar
+					font-family: 'moderat-bold'
+					font-weight: normal
+					font-size: 16px
+					line-height: 19px
+					color: $primary
+					img
+						margin-right: 12px
 		&-item
+			&-link
+				color: $secondary
+				font-size: 20px
+				line-height: 24px
+				&:after
+					content: ""
+					display: inline-block
+					background: url(../images/read-more.svg) no-repeat 0 0
+					width: 11px
+					height: 11px
+					background-size: contain
+					margin-left: 7px
 			&-date
 				font-family: 'moderat-mono-regular'
 				font-weight: normal
@@ -56,6 +77,13 @@
 				height: 259px
 				width: 100%
 				position: relative
+				.img
+					position: absolute
+					top: 0
+					right: 0
+					left: 0
+					bottom: 0
+					border-radius: 25px 25px 0 0
 				&:before
 					content: ""
 					display: block
