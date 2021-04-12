@@ -7,8 +7,8 @@ mixin BlogCarousel()
 				.col-12.col-xxl-9
 					.row
 						.col-12
-							.media.first-blog-item.align-items-stretch
-								.media-body.d-flex.flex-column
+							.media.first-blog-item.align-items-stretch.flex-column.flex-xl-row
+								.media-body.d-flex.flex-column.order-1.order-xl-0
 									.blog-carousel-item-date.d-flex.justify-content-between
 										div Jan 6th, 2021
 									.h3 Using "Complete the Look" to fit the same item in different settings
@@ -20,7 +20,7 @@ mixin BlogCarousel()
 										a.btn.btn-secondary.shadow.btn-icon(href="#")
 											span Read more
 											i.i.i-sm.i-right-arrow
-								.blog-carousel-item-image
+								.blog-carousel-item-image.order-0.order-xl-1
 									.img(style="background-image: url(images/news-item-background.jpg)")
 									.title
 										div Intersecting Styles: Visual Context in Action
