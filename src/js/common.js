@@ -91,22 +91,11 @@
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counters = $('.counters');
-		var $blogCarousel = $('.blog-carousel');
 
 		$carouselNavy = $('#carouselNavy');
 
 		initTbcfywCarousel();
 		initSolutionCarousel();
-
-		if ($blogCarousel.exists()) {
-			$blogCarousel.slick({
-				arrows: false,
-				variableWidth: true,
-				centerMode: true,
-				centerPadding: "0px",
-				slidesToShow: 3
-			});
-		}
 
 		if ($bookADemoCarousel.exists()) {
 			$bookADemoCarousel.slick({
