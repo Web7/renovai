@@ -3,8 +3,8 @@ include ../../molecules/blog-carousel-item
 mixin BlogCarousel()
 	section.blog-carousel-section
 		.container
-			.row
-				.col-12.col-xxl-8.offset-xxl-2
+			.row.justify-content-center
+				.col-12.col-xxl-9
 					.row
 						.col-12
 							.media.first-blog-item.align-items-stretch
@@ -25,7 +25,7 @@ mixin BlogCarousel()
 									.title
 										div Intersecting Styles: Visual Context in Action
 
-					.row.align-self-stretch
+					.row.align-self-stretch.mb-xl-10
 						+BlogCarouselItem({
 							titleImage: 'Flat. Out.\n Better.',
 							date: 'Dec 9th, 2020',
@@ -54,3 +54,6 @@ mixin BlogCarousel()
 							title: 'Consumers patterns and habits in their online quest for the perfect furniture',
 							description: 'Regardless of industry, consumers today are faced with an overwhelming array of choice while online shopping. The theory of...'
 						})
+					.row
+						.col-12.text-center
+							a.btn.btn-info.btn-lg(href="#") Load more
