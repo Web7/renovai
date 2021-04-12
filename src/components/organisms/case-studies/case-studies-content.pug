@@ -3,7 +3,9 @@ include ../../molecules/case-studies-media
 mixin CaseStudiesContent()
 	section.case-studies-content-section.sm-toggle-position
 		.container
-			.row
-				+CaseStudiesMedia()
-				+CaseStudiesMedia()
-				+CaseStudiesMedia()
+			.row.justify-content-center
+				.col-12.col-xxl-9
+					.row
+						+CaseStudiesMedia()
+						+CaseStudiesMedia()
+						+CaseStudiesMedia()
