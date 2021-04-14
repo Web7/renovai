@@ -1,17 +1,31 @@
+.case-studies-header-img
+	display: block
+	position: absolute
+	z-index: 1
+	right: -65px
+	bottom: 0
+	width: 328px
+	height: 186px
+
 .case-studies
-	&-header-section
-		background-color: $secondary
-		min-height: 401px
-		height: 401px
-		font-family: 'moderat-light'
-		font-weight: normal
-		font-size: 16px
-		line-height: 25px
-		.h1
-			font-family: 'comfortaa'
-			font-weight: 700
-			font-size: 32px
-			line-height: 42px
+	&-header
+		&-section
+			padding-top: 60px
+			padding-bottom: 153px
+			background-color: $secondary
+			font-family: 'moderat-light'
+			font-weight: normal
+			font-size: 16px
+			line-height: 25px
+			overflow: hidden
+			.h1
+				font-family: 'comfortaa'
+				font-weight: 700
+				font-size: 32px
+				line-height: 42px
+		&-content
+			position: relative
+			z-index: 2
 
 	&-item-header-section
 		padding-top: 81px
@@ -82,8 +96,8 @@
 @media (min-width: 768px)
 	.case-studies
 		&-header-section
-			min-height: 919px
-			height: 919px
+			padding-top: 221px
+			padding-bottom: 137px
 			font-size: 24px
 			line-height: 32px
 			.h1
@@ -112,6 +126,11 @@
 					width: 75px
 					height: 61px
 					right: 110px
+	.case-studies-header-img
+		width: 441px
+		height: 250px
+		right: 100px
+		bottom: 0
 
 @media (min-width: 992px)
 	.case-studies
@@ -137,4 +156,19 @@
 					left: 250px
 				&:after
 					right: 210px
+	.case-studies-header-img
+		width: 588px
+		height: 333px
+		right: 0
+		bottom: 0
 
+@media (min-width: 1400px)
+	.case-studies-header-img
+		width: 882px
+		height: 500px
+		right: 0
+		bottom: 0
+
+@media (min-width: 1600px)
+	.case-studies-header-img
+		right: 250px
