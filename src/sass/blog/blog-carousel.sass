@@ -109,6 +109,8 @@
 				left: 0
 				bottom: 0
 				border-radius: 12px 12px 0 0
+				background: no-repeat center center
+				background-size: cover
 			&:before
 				content: ""
 				display: block
@@ -137,6 +139,59 @@
 				line-height: 42px
 				z-index: 2
 				padding: 0 23px
+
+@media (min-width: 992px)
+	.blog-carousel
+		padding: 20px
+		&-section
+			&:after
+				margin-top: -98px
+				width: 100%
+				height: 443px
+			.col-md-6
+				margin-bottom: 96px
+				&:nth-child(odd)
+					padding-right: 56px
+				&:nth-child(even)
+					padding-left: 56px
+			.media
+				height: 100%
+				border-radius: 25px
+				&-body
+					padding: 24px 35px
+					font-size: 20px
+					line-height: 32px
+					.h3
+						font-size: 28px
+						line-height: 42px
+				.slide-item-white
+					border-radius: 25px
+				.slide-item-shadow
+					border-radius: 25px
+				.avatar
+					display: block
+					font-size: 16px
+					line-height: 19px
+					img
+						margin-right: 12px
+				&.first-blog-item
+					margin-top: 120px
+					margin-bottom: 120px
+					height: auto
+					.media-body
+						padding: 0 60px 0 0
+						.h3
+							font-size: 32px
+							line-height: 48px
+					.blog-carousel-item-image
+						max-width: 450px
+						height: 514px
+						border-radius: 16px
+						box-shadow: 0 154.43px 123.544px rgba(0, 0, 0, 0.07), 0 64.5173px 51.6139px rgba(0, 0, 0, 0.0503198), 0 34.494px 27.5952px rgba(0, 0, 0, 0.0417275), 0 19.3371px 15.4697px rgba(0, 0, 0, 0.035), 0 10.2698px 8.21582px rgba(0, 0, 0, 0.0282725), 0 4.27348px 3.41879px rgba(0, 0, 0, 0.0196802)
+						.img
+							border-radius: 16px
+						&:before
+							border-radius: 16px
 
 @media (min-width: 1400px)
 	.blog-carousel

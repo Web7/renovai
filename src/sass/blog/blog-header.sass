@@ -28,7 +28,13 @@
 		position: relative
 		z-index: 2
 .blog-header-img
-	display: none
+	display: block
+	width: 277px
+	height: 184px
+	position: absolute
+	z-index: 1
+	right: 0
+	bottom: 0
 
 @media (min-width: 768px)
 	.blog-header
@@ -43,13 +49,27 @@
 				line-height: 83px
 		&-container
 			padding-top: 183px
+	.blog-header-img
+		width: 391px
+		height: 276px
+		right: 0
+		bottom: 0
+
+@media (min-width: 992px)
+	.blog-header
+		&-section
+			font-size: 28px
+			line-height: 42px
+
+	.blog-header-img
+		width: 521px
+		height: 368px
+		right: 0
+		bottom: 0
 
 @media (min-width: 1400px)
 	.blog-header-img
-		display: block
 		width: 782px
 		height: 552px
-		position: absolute
 		right: 0
-		z-index: 1
 		bottom: 0
