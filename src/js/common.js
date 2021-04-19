@@ -129,10 +129,12 @@
 
 		if ($slickLogos.exists()) {
 			$slickLogos.slick({
+				cssEase: 'linear',
 				arrows: false,
 				slidesToShow: 5,
 				autoplay: true,
-				autoplaySpeed: 2000
+				autoplaySpeed: 0,
+				speed: 5000
 			});
 		}
 	});
