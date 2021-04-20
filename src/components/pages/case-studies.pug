@@ -34,7 +34,8 @@ block main
 								p.small.mb-5 We collect the information you provide here in order to send you your copy of the case study, don’t worry, we are not into spamming! You may unsubscribe from these communications at any time.
 								.form-group.row
 									.col-12
-										button.btn.btn-pink.btn-lg.w-100(type="button" data-toggle="modal" data-target="#caseStudiesGotItModal") Send to mail
+										button.btn.btn-pink.btn-lg.w-100.d-none.d-md-inline-block(type="button" data-toggle="modal" data-target="#caseStudiesGotItModal") Send to mail
+										button.btn.btn-pink.w-100.d-md-none(type="button" data-toggle="modal" data-target="#caseStudiesGotItModal") Send to mail
 	.modal.fade#caseStudiesGotItModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
 		.modal-dialog.modal-dialog-centered.modal-xl
 			.modal-content.case-studies-got-it-modal

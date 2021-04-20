@@ -69,6 +69,15 @@
 				font-weight: normal
 				font-size: 20px
 				line-height: 24px
+				color: $secondary
+				&:after
+					content: ""
+					display: inline-block
+					background: url(../images/read-more.svg#mobile) no-repeat 0 0
+					width: 11px
+					height: 11px
+					background-size: contain
+					margin-left: 7px
 
 @media (min-width: 768px)
 	.news-content-section
@@ -106,8 +115,11 @@
 					line-height: 28px
 					margin-bottom: 29px
 				&-link
+					color: $primary
 					font-size: 24px
 					line-height: 36px
+					&:after
+						background-image: url(../images/read-more.svg#desktop)
 			&.flex-column:not(.flex-lg-row)
 				font-size: 20px
 				line-height: 32px
