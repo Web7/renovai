@@ -100,6 +100,23 @@
 		}
 	};
 
+	var intervalGrandmother;
+
+	var initGrandmother = function() {
+		var $careersGrandmotherContainer = $('.careers-grandmother-container');
+		if (!$careersGrandmotherContainer.exists()) {
+			return;
+		}
+		if (window.outerWidth > 425) {
+			clearInterval(intervalGrandmother);
+			return;
+		}
+		intervalGrandmother = setInterval(function(){
+			$careersGrandmotherContainer.click();
+		}, 800);
+
+	};
+
 	$(function () {
 		var $bookADemoCarousel = $('.book-a-demo-carousel');
 		var $slickLogos = $('.slick-logos');
@@ -110,6 +127,7 @@
 
 		$carouselNavy = $renCarouselSlickFirst;
 
+		initGrandmother();
 		initTbcfywCarousel();
 		initSolutionCarousel();
 
@@ -227,6 +245,7 @@
 	});
 
 	$(window).on('resize', function() {
+		initGrandmother();
 		initTbcfywCarousel();
 		initSolutionCarousel();
 	});
