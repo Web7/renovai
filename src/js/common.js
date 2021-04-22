@@ -139,6 +139,10 @@
 		}
 	});
 
+	$(document).on('change', '.select-careers-tab', function() {
+		$('#pillsTab li a').eq($(this).val()).tab('show');
+	});
+
 	$(document).on('click', '.careers-grandmother-container', function(){
 		if (window.outerWidth > 425) {
 			return;
