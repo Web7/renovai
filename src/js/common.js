@@ -22,9 +22,11 @@
 
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
-			var $carouselItem = $carouselNavy.find('.carousel-item.active');
+			var $carouselItem = $carouselNavy.find('.slick-slide.slick-active');
 			var $videoCarousel = $carouselItem.find('.video-carousel');
 			var videoPromise = $videoCarousel[0].play();
+
+			// console.log($videoCarousel);
 
 			if (videoPromise !== undefined) {
 				videoPromise.then( e => {
@@ -35,10 +37,10 @@
 			}
 
 			$videoCarousel[0].onended = function () {
-				$carouselNavy.carousel('next');
+				$carouselNavy.slick('slickNext');
 			};
 
-			$carouselNavy.on('slid.bs.carousel', function (e) {
+			$carouselNavy.on('beforeChange', function (e) {
 				if ($videoCarousel.exists()) {
 					$videoCarousel[0].pause();
 				}
@@ -91,11 +93,33 @@
 		var $slickLogos = $('.slick-logos');
 		var $carouselReviews = $('#carouselReviews');
 		var $counters = $('.counters');
+		var $renCarouselSlickFirst = $('.ren-carousel-slick-first');
+		var $renCarouselSlickSecond = $('.ren-carousel-slick-second');
 
-		$carouselNavy = $('#carouselNavy');
+		$carouselNavy = $renCarouselSlickFirst;
 
 		initTbcfywCarousel();
 		initSolutionCarousel();
+
+		if ($renCarouselSlickFirst.exists() && $renCarouselSlickSecond.exists()) {
+			$renCarouselSlickFirst.slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: '<div class="ren-carousel-control-prev d-none d-md-flex"><span class="ren-carousel-control-prev-icon"></span></div>',
+				nextArrow: '<div class="ren-carousel-control-next d-none d-md-flex"><span class="ren-carousel-control-next-icon"></span></div>',
+				fade: true,
+				asNavFor: '.ren-carousel-slick-second'
+			});
+			$renCarouselSlickSecond.slick({
+				asNavFor: '.ren-carousel-slick-first',
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				appendDots: '.ren-carousel-indicators',
+				arrows: false,
+				fade: true
+			})
+		}
 
 		if ($bookADemoCarousel.exists()) {
 			$bookADemoCarousel.slick({
