@@ -150,10 +150,6 @@
 			}, 100);
 		}
 
-		// setTimeout(function () {
-		// 	startVideo();
-		// }, 7000);
-
 		if ($carouselReviews.exists()) {
 			$carouselReviews.slick({
 				fade: true,
@@ -204,7 +200,9 @@
 
 	$(window).on('scroll', function () {
 		if ($carouselNavy.is(':inview')) {
-			startVideo();
+			setTimeout(function () {
+				startVideo();
+			}, 1000);
 		}
 		if (show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)) {
 			var $dataCounter = $('[data-counter]');
