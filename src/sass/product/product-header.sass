@@ -4,6 +4,7 @@
 	font-family: 'moderat-light'
 	font-size: 16px
 	line-height: 24px
+	overflow: hidden
 	&:before
 		content: ""
 		display: block
@@ -11,7 +12,7 @@
 		top: 0
 		left: 0
 		right: 0
-		height: 900px
+		bottom: 0
 		background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%)
 		z-index: -1
 	&:after
@@ -21,10 +22,10 @@
 		background: url(../images/product-header-bg.svg) no-repeat 0 0
 		background-size: cover
 		height: 370px
-		width: 100%
+		width: 1935px
 		left: 0
 		right: 0
-		top: 294px
+		bottom: 0
 		z-index: -1
 	.h1
 		font-family: 'comfortaa'
@@ -38,6 +39,8 @@
 		display: inline-block
 		margin-top: 32px
 		margin-bottom: 32px
+		video
+			border-radius: 30px
 	.counters
 		.h1
 			font-size: 28px
@@ -54,14 +57,11 @@
 		line-height: 32px
 		&:after
 			height: 746px
-			top: 362px
+			bottom: 0
 			background-size: auto
 		.h1
 			font-size: 70px
 			line-height: 84px
-		.tablet-container
-			height: 405px
-			width: 767px
 		.counters
 			.h1
 				font-size: 74px
