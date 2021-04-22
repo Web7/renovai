@@ -9,6 +9,18 @@
 }(function ($) {
 	'use strict';
 
+	$.extend($.expr[':'], {
+		inview: function (elem) {
+			var t = $(elem);
+			var offset = t.offset();
+			var win = $(window);
+			var winST = win.scrollTop();
+			var elHeight = t.outerHeight(true);
+
+			return offset.top > winST - elHeight && offset.top < winST + elHeight + win.height();
+		}
+	});
+
 	$.fn.exists = function () {
 		return this.length !== 0;
 	};
@@ -138,9 +150,9 @@
 			}, 100);
 		}
 
-		setTimeout(function () {
-			startVideo();
-		}, 7000);
+		// setTimeout(function () {
+		// 	startVideo();
+		// }, 7000);
 
 		if ($carouselReviews.exists()) {
 			$carouselReviews.slick({
@@ -191,6 +203,9 @@
 	});
 
 	$(window).on('scroll', function () {
+		if ($carouselNavy.is(':inview')) {
+			startVideo();
+		}
 		if (show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)) {
 			var $dataCounter = $('[data-counter]');
 			if ($dataCounter.exists()) {
