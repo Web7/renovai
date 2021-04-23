@@ -105,13 +105,16 @@ textarea
 	line-height: 17px
 	color: initial
 
-.p-mobile
-	padding: 0
-
 @media (min-width: 360px)
 	.p-mobile
-		padding: 0 25px
+		&.header-logo
+			margin-left: 25px
+		&.navbar-toggler
+			margin-right: 20px
 
 @media (min-width: 768px)
 	.p-mobile
-		padding: 0
+		&.header-logo
+			margin-left: 0
+		&.navbar-toggler
+			margin-right: 0
