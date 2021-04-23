@@ -121,8 +121,15 @@ textarea
 
 .video-carousel
 	position: relative
-	background: no-repeat center center
-	background-size: contain
+	.poster
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+		background: no-repeat center center
+		background-size: contain
 	video
 		opacity: 0
 	&:before
@@ -147,6 +154,8 @@ textarea
 			display: block
 	&.play
 		background-image: none
+		.poster
+			display: none
 		video
 			opacity: 1
 		&:before
