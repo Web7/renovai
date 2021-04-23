@@ -241,7 +241,7 @@
 		if ($carouselNavy.is(':inview')) {
 			setTimeout(function () {
 				startVideo();
-			}, 1000);
+			}, 7000);
 		}
 		if (show && (counterSectionRcsarTop < $(window).scrollTop() + windowHeight)) {
 			var $dataCounter = $('[data-counter]');
