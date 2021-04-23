@@ -121,6 +121,8 @@ textarea
 
 .video-carousel
 	position: relative
+	background: no-repeat center center
+	background-size: contain
 	&:before
 		content: ""
 		display: none
@@ -141,3 +143,7 @@ textarea
 	&:hover
 		&:before
 			display: block
+	&.play
+		background-image: none
+		&:before
+			display: none
