@@ -35,8 +35,9 @@
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
 			var $carouselItem = $carouselNavy.find('.slick-slide.slick-active');
-			var $videoCarousel = $carouselItem.find('.video-carousel');
+			var $videoCarousel = $carouselItem.find('.video-carousel video');
 			var videoPromise = $videoCarousel[0].play();
+			$videoCarousel.closest('.video-carousel').addClass('play');
 
 			// console.log($videoCarousel);
 
@@ -57,10 +58,13 @@
 					$videoCarousel[0].pause();
 				}
 
+				$videoCarousel.closest('.video-carousel').removeClass('play');
 				$videoCarousel = $(e.relatedTarget).find('.video-carousel');
+				$videoCarousel.closest('.video-carousel').addClass('play');
 
 				if ($videoCarousel.exists()) {
 					$videoCarousel[0].play();
+
 				}
 			})
 		}
@@ -206,6 +210,16 @@
 		$beTextActive.removeClass('active');
 		$careersGrandmotherLinkNext.addClass('active');
 		$beTextNext.addClass('active');
+	});
+
+	$(document).on('click', '.video-carousel', function() {
+		var $this = $(this);
+		var $video = $this.find('video');
+		if (!$video.exists()) {
+			return;
+		}
+		$this.addClass('play');
+		$video[0].play();
 	});
 
 	$(document).on('mouseover', '.careers-grandmother-link', function(){

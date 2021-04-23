@@ -118,3 +118,26 @@ textarea
 			margin-left: 0
 		&.navbar-toggler
 			margin-right: 0
+
+.video-carousel
+	position: relative
+	&:before
+		content: ""
+		display: none
+		width: 74px
+		height: 74px
+		background: url(../images/play-button.svg) no-repeat center center
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: auto
+		cursor: pointer
+		z-index: 2
+	&:not(.play)
+		&:before
+			display: block
+	&:hover
+		&:before
+			display: block
