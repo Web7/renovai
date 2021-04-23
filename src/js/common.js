@@ -35,8 +35,15 @@
 	var startVideo = function() {
 		if ($carouselNavy.exists()) {
 			var $carouselItem = $carouselNavy.find('.slick-slide.slick-active');
-			var $videoCarousel = $carouselItem.find('.video-carousel video');
-			var videoPromise = $videoCarousel[0].play();
+			var $videoCarousel = $carouselItem.find('.video-carousel');
+			var $video = $videoCarousel.find('video');
+
+			if ($videoCarousel.hasClass('play')) {
+				return;
+			}
+
+			var videoPromise = $video[0].play();
+
 			$videoCarousel.closest('.video-carousel').addClass('play');
 
 			// console.log($videoCarousel);
