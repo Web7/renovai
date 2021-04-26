@@ -112,7 +112,7 @@
 		}
 		intervalGrandmother = setInterval(function(){
 			$careersGrandmotherContainer.click();
-		}, 800);
+		}, 1200);
 
 	};
 
