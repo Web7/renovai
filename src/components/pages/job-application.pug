@@ -106,14 +106,14 @@ block main
 												i.i.i-sm.i-right-arrow
 		+ExperienceRenovai()
 	.modal.fade#jobApplicationModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
-		.modal-dialog.modal-dialog-centered.modal-lg
-			.modal-content
+		.modal-dialog.modal-dialog-centered.modal-xl
+			.modal-content.job-application-modal
 				.modal-header
 					button.close(type="button" data-dismiss="modal" aria-label="Close")
 						span(aria-hidden="true") &times;
 				.modal-body
 					.text-center
-						h1.h1 Thank you for submitting your application!
+						h1.h1.modal-brackets Thank you for submitting your application!
 						p.mb-5 We are excited that you are interested in joining our journey!
 							br
 							| In the meantime, we encourage you to explore our website to have a better understanding of what it is we do here and our company's DNA :)
@@ -123,4 +123,6 @@ block main
 							br
 							|
 							i - renovai's hiring team
-						a.btn.btn-light(href="#") Explore
+						a.btn.btn-light.btn-icon(href="#")
+							span Explore
+							i.i.i-sm.i-right-arrow
