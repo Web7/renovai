@@ -38,7 +38,7 @@ block main
 										button.btn.btn-pink.w-100.d-md-none(type="button" data-toggle="modal" data-target="#caseStudiesGotItModal") Send to mail
 	.modal.fade#caseStudiesGotItModal(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
 		.modal-dialog.modal-dialog-centered.modal-xl
-			.modal-content.case-studies-got-it-modal
+			.modal-content.case-studies-item-modal
 				.modal-header
 					button.close(type="button" data-dismiss="modal" aria-label="Close")
 						span(aria-hidden="true") &times;
@@ -48,4 +48,8 @@ block main
 						p.mb-5 Your copy will be sent to your email shortly, we hope you will find it insightful.
 							br
 							| Thank you for your interest in renovai!
-						a.btn.btn-secondary(href="#") See more
+						.mb-10
+							a.btn.btn-secondary.btn-icon(href="#")
+								span See more
+								i.i.i-sm.i-right-arrow
+						img(src="images/footer-logo.svg" alt="" title="")
