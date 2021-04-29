@@ -69,13 +69,31 @@
 			line-height: 34px
 			margin-bottom: 0
 .col-about-auto
+	position: relative
+	&:after
+		content: ""
+		display: block
+		background: url(../images/animation-plus.svg) no-repeat 0 0
+		background-size: contain
+		width: 36px
+		height: 36px
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -10px
+		margin: auto
+		z-index: 2
+		border-radius: 100%
+		box-shadow: 0px 77.2195px 61.7756px rgba(0, 0, 0, 0.07), 0px 32.2604px 25.8083px rgba(0, 0, 0, 0.0503198), 0px 17.248px 13.7984px rgba(0, 0, 0, 0.0417275), 0px 9.66907px 7.73526px rgba(0, 0, 0, 0.035), 0px 5.13517px 4.10814px rgba(0, 0, 0, 0.0282725), 0px 2.13686px 1.70949px rgba(0, 0, 0, 0.0196802)
 	img
 		border-radius: 100px
 		box-shadow: 0 104.255px 83.4043px rgba(0, 0, 0, 0.07), 0 43.5554px 34.8443px rgba(0, 0, 0, 0.0503198), 0 23.2868px 18.6294px rgba(0, 0, 0, 0.0417275), 0 13.0544px 10.4435px rgba(0, 0, 0, 0.035), 0 6.93308px 5.54647px rgba(0, 0, 0, 0.0282725), 0 2.88501px 2.30801px rgba(0, 0, 0, 0.0196802)
-		margin-bottom: 66px
+		margin-bottom: 16px
 	&:nth-child(2)
 		img
 			max-width: calc(100%)
+	&:last-child:after
+		display: none
 
 .hyper-personalizes
 	position: absolute
@@ -101,7 +119,8 @@
 
 @media (min-width: 1400px)
 	.col-about-auto
-		//margin: 0 -95px
+		&:after
+			display: none
 		img
 			border-radius: 100px
 			box-shadow: 0 104.255px 83.4043px rgba(0, 0, 0, 0.07), 0 43.5554px 34.8443px rgba(0, 0, 0, 0.0503198), 0 23.2868px 18.6294px rgba(0, 0, 0, 0.0417275), 0 13.0544px 10.4435px rgba(0, 0, 0, 0.035), 0 6.93308px 5.54647px rgba(0, 0, 0, 0.0282725), 0 2.88501px 2.30801px rgba(0, 0, 0, 0.0196802)
