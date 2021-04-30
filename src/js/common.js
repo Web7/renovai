@@ -172,7 +172,8 @@
 				fade: true,
 				infinite: true,
 				cssEase: 'linear',
-				speed: 500
+				speed: 500,
+				dots: true
 			});
 		}
 

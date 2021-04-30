@@ -1,6 +1,6 @@
 .slick
 	&-slide
-		margin-bottom: 50px
+		//margin-bottom: 50px
 		float: none
 		height: auto
 	&-initialized
@@ -48,6 +48,21 @@
 		font-family: 'moderat-light'
 		margin-top: -65px
 		height: calc(100% + 65px)
+		&.slick-dotted.slick-slider
+			margin-bottom: 55px
+		.slick-dots
+			bottom: 25px
+			li
+				width: 9px
+				height: 9px
+				button
+					background-color: #999BAC
+					width: 9px
+					height: 9px
+					border-radius: 100%
+				&.slick-active
+					button
+						background-color: $white
 		.bg-image
 			height: calc(100% - 18px)
 			width: 210%
