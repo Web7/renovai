@@ -1,0 +1,62 @@
+.row-chessboard
+	.col-chessboard
+		min-height: 744px
+		position: relative
+		font-family: 'moderat-regular'
+		font-weight: normal
+		font-size: 20px
+		line-height: 32px
+		display: flex
+		justify-content: center
+		flex-direction: column
+		.h3
+			font-family: 'comfortaa-bold'
+			font-weight: normal
+			font-size: 40px
+			line-height: 45px
+		&:nth-child(4n+1)
+			color: $white
+			padding-right: 140px
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				width: calc(100vw / 2)
+				background-color: $primary
+				z-index: -1
+		&:nth-child(4n+4)
+			padding-left: 140px
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 0
+				width: calc(100vw / 2)
+				background-color: #FFE3FE
+				z-index: -1
+
+.lp-container
+	padding-top: 170px
+	min-height: 690px
+	color: $white
+	font-family: 'moderat-regular'
+	font-size: 28px
+	line-height: 42px
+	font-weight: normal
+	.h1
+		small
+			font-family: 'comfortaa-regular'
+			font-size: 30px
+			font-weight: normal
+			line-height: 48px
+		span
+			font-family: 'comfortaa-bold'
+			font-size: 70px
+			font-weight: normal
+			line-height: 84px
+

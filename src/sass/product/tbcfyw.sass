@@ -1,8 +1,9 @@
 .tbcfyw
 	&-section
-		.title
-			background-color: $secondary
-			color: $white
+		&:not(.bg-primary)
+			.title
+				background-color: $secondary
+				color: $white
 		.h2
 			font-family: 'moderat-bold'
 			font-weight: normal
@@ -45,9 +46,10 @@
 @media (min-width: 992px)
 	.tbcfyw
 		&-section
-			.title
-				background-color: $white
-				color: $body-color
+			&:not(.bg-primary)
+				.title
+					background-color: $white
+					color: $body-color
 			.h2
 				font-size: 52px
 				line-height: 62px

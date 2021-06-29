@@ -114,3 +114,27 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'comfortaa-bold';
+    src: url(../fonts/comfortaa-bold.eot);
+    src: url(../fonts/comfortaa-bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/comfortaa-bold.woff) format('woff'),
+    url(../fonts/comfortaa-bold.svg#Comfortaa-Bold) format('svg'),
+    url(../fonts/comfortaa-bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'comfortaa-regular';
+    src: url(../fonts/comfortaa-regular.eot);
+    src: url(../fonts/comfortaa-regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/comfortaa-regular.woff) format('woff'),
+    url(../fonts/comfortaa-regular.svg#Comfortaa-Bold) format('svg'),
+    url(../fonts/comfortaa-regular.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
