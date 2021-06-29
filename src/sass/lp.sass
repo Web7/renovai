@@ -1,22 +1,25 @@
 .row-chessboard
 	.col-chessboard
-		min-height: 744px
+		min-height: 375px
 		position: relative
 		font-family: 'moderat-regular'
 		font-weight: normal
-		font-size: 20px
-		line-height: 32px
+		font-size: 16px
+		line-height: 24px
 		display: flex
 		justify-content: center
 		flex-direction: column
 		.h3
 			font-family: 'comfortaa-bold'
 			font-weight: normal
-			font-size: 40px
-			line-height: 45px
+			font-size: 24px
+			line-height: 27px
+		&:nth-child(4n+2),
+		&:nth-child(4n+3)
+			display: none
 		&:nth-child(4n+1)
 			color: $white
-			padding-right: 140px
+			padding: 35px
 			&:before
 				content: ""
 				display: block
@@ -24,11 +27,11 @@
 				top: 0
 				right: 0
 				bottom: 0
-				width: calc(100vw / 2)
+				width: calc(100vw)
 				background-color: $primary
 				z-index: -1
 		&:nth-child(4n+4)
-			padding-left: 140px
+			padding: 35px
 			&:before
 				content: ""
 				display: block
@@ -36,27 +39,64 @@
 				top: 0
 				left: 0
 				bottom: 0
-				width: calc(100vw / 2)
+				width: calc(100vw)
 				background-color: #FFE3FE
 				z-index: -1
 
 .lp-container
-	padding-top: 170px
-	min-height: 690px
+	padding-top: 145px
+	min-height: 520px
 	color: $white
 	font-family: 'moderat-regular'
-	font-size: 28px
-	line-height: 42px
 	font-weight: normal
+	font-size: 20px
+	line-height: 30px
 	.h1
 		small
 			font-family: 'comfortaa-regular'
-			font-size: 30px
+			font-size: 21px
 			font-weight: normal
-			line-height: 48px
+			line-height: 28px
+			display: block
 		span
 			font-family: 'comfortaa-bold'
-			font-size: 70px
+			font-size: 34px
 			font-weight: normal
-			line-height: 84px
+			line-height: 50px
+			display: block
+
+@media (min-width: 768px)
+	.row-chessboard
+		.col-chessboard
+			min-height: 744px
+			font-size: 20px
+			line-height: 32px
+			.h3
+				font-size: 40px
+				line-height: 45px
+			&:nth-child(4n+2),
+			&:nth-child(4n+3)
+				display: flex
+			&:nth-child(4n+1)
+				padding-left: 140px
+				&:before
+					width: calc(100vw / 2)
+			&:nth-child(4n+4)
+				padding-left: 140px
+				&:before
+					width: calc(100vw / 2)
+	.lp-container
+		padding-top: 170px
+		min-height: 690px
+		font-size: 28px
+		line-height: 42px
+		.h1
+			small
+				font-size: 30px
+				line-height: 48px
+				display: inline
+			span
+				font-size: 70px
+				line-height: 84px
+				display: inline
 
