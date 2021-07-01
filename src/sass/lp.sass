@@ -43,27 +43,45 @@
 				background-color: #FFE3FE
 				z-index: -1
 
-.lp-container
-	padding-top: 145px
-	min-height: 520px
-	color: $white
-	font-family: 'moderat-regular'
-	font-weight: normal
-	font-size: 20px
-	line-height: 30px
-	.h1
-		small
+.lp
+	&-container
+		padding-top: 145px
+		min-height: 520px
+		color: $white
+		font-family: 'moderat-regular'
+		font-weight: normal
+		font-size: 20px
+		line-height: 30px
+		.h1
+			small
+				font-family: 'comfortaa-regular'
+				font-size: 21px
+				font-weight: normal
+				line-height: 28px
+				display: block
+			span
+				font-family: 'comfortaa-bold'
+				font-size: 34px
+				font-weight: normal
+				line-height: 50px
+				display: block
+	&-title-block
+		p
 			font-family: 'comfortaa-regular'
-			font-size: 21px
 			font-weight: normal
-			line-height: 28px
-			display: block
-		span
+			font-size: 15px
+			line-height: 17px
+		.h2
 			font-family: 'comfortaa-bold'
-			font-size: 34px
 			font-weight: normal
-			line-height: 50px
-			display: block
+			font-size: 24px
+			line-height: 27px
+	&-list-item
+		p
+			font-family: 'moderat-bold'
+			font-weight: normal
+			font-size: 16px
+			line-height: 19px
 
 @media (min-width: 768px)
 	.row-chessboard
@@ -85,18 +103,30 @@
 				padding-left: 140px
 				&:before
 					width: calc(100vw / 2)
-	.lp-container
-		padding-top: 170px
-		min-height: 690px
-		font-size: 28px
-		line-height: 42px
-		.h1
-			small
+	.lp
+		&-container
+			padding-top: 170px
+			min-height: 690px
+			font-size: 28px
+			line-height: 42px
+			.h1
+				small
+					font-size: 30px
+					line-height: 48px
+					display: inline
+				span
+					font-size: 70px
+					line-height: 84px
+					display: inline
+		&-title-block
+			p
 				font-size: 30px
-				line-height: 48px
-				display: inline
-			span
-				font-size: 70px
-				line-height: 84px
-				display: inline
+				line-height: 34px
+			.h2
+				font-size: 35px
+				line-height: 39px
+		&-list-item
+			p
+				font-size: 20px
+				line-height: 24px
 
