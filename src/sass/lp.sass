@@ -42,7 +42,16 @@
 				width: calc(100vw)
 				background-color: #FFE3FE
 				z-index: -1
-
+	&.row-chessboard-reverse
+		.col-chessboard
+			&:nth-child(4n+1)
+				color: $primary
+				&:before
+					background-color: #FFE3FE
+			&:nth-child(4n+4)
+				color: $white
+				&:before
+					background-color: $primary
 .lp
 	&-container
 		padding-top: 145px
