@@ -110,9 +110,12 @@
 			clearInterval(intervalGrandmother);
 			return;
 		}
-		intervalGrandmother = setInterval(function(){
-			$careersGrandmotherContainer.click();
-		}, 1200);
+
+		if (!intervalGrandmother) {
+			intervalGrandmother = setInterval(function () {
+				$careersGrandmotherContainer.click();
+			}, 1200);
+		}
 
 	};
 
