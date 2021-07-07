@@ -14,12 +14,39 @@
 			font-weight: normal
 			font-size: 24px
 			line-height: 27px
+			.sub-title
+				font-size: 18px
+				line-height: 30px
+				font-family: 'moderat-bold'
+				font-weight: normal
+		a:not(.btn)
+			font-size: 15px
+			line-height: 18px
+			text-decoration: none
+			border-bottom: 1px solid
+			display: inline-flex
+			align-items: center
+			padding-bottom: 2px
+			&:after
+				content: ""
+				display: inline-block
+				margin-left: 8px
+				width: 16px
+				height: 16px
+				background: no-repeat 0 0
+				background-size: contain
 		&:nth-child(4n+2),
 		&:nth-child(4n+3)
 			display: none
 		&:nth-child(4n+1)
 			color: $white
 			padding: 35px
+			a:not(.btn)
+				color: $primary
+				border-color: $primary
+				&:after
+					background-image: url(../images/icon-right-arrow-primary.svg)
+
 			&:before
 				content: ""
 				display: block
@@ -32,6 +59,11 @@
 				z-index: -1
 		&:nth-child(4n+4)
 			padding: 35px
+			a:not(.btn)
+				color: $white
+				border-color: $white
+				&:after
+					background-image: url(../images/icon-right-arrow-white.svg)
 			&:before
 				content: ""
 				display: block
@@ -46,10 +78,20 @@
 		.col-chessboard
 			&:nth-child(4n+1)
 				color: $primary
+				a:not(.btn)
+					color: $primary
+					border-color: $primary
+					&:after
+						background-image: url(../images/icon-right-arrow-primary.svg)
 				&:before
 					background-color: #FFE3FE
 			&:nth-child(4n+4)
 				color: $white
+				a:not(.btn)
+					color: $white
+					border-color: $white
+					&:after
+						background-image: url(../images/icon-right-arrow-white.svg)
 				&:before
 					background-color: $primary
 .lp
@@ -93,10 +135,11 @@
 			line-height: 27px
 	&-list-item
 		p
-			font-family: 'moderat-bold'
-			font-weight: normal
 			font-size: 16px
 			line-height: 19px
+			b, strong
+				font-family: 'moderat-bold'
+				font-weight: normal
 	&-col-content
 		background-color: $white
 		border-radius: 20px
@@ -145,6 +188,12 @@
 			.h3
 				font-size: 40px
 				line-height: 45px
+				.sub-title
+					font-size: 24px
+					line-height: 36px
+			a:not(.btn)
+				font-size: 20px
+				line-height: 24px
 			&:nth-child(4n+2),
 			&:nth-child(4n+3)
 				display: flex
