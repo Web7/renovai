@@ -1,11 +1,11 @@
 block variables
-- let data = self.htmlWebpackPlugin.options.file
+- let path = self.htmlWebpackPlugin.options
 
 doctype html
 html(lang="en")
 	include ../organisms/head
 	head
-		+head(data)
+		+head(path.file)
 		block head
 	body.d-flex.flex-column
 		include ../organisms/header
