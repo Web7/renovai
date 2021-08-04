@@ -49,6 +49,7 @@ $pink1: #FF7F9A !default;
 $pink2: #FF86DD !default;
 $pink3: #FFDCF7 !default;
 $pink4: #F9757E !default;
+$pink5: #FFF2FF !default;
 $purple1: #611ABA !default;
 $purple2: #931BE3 !default;
 $purple3: #590EAA !default;
@@ -64,6 +65,7 @@ $colors: map-merge(
 						"pink2": $pink2,
 						"pink3": $pink3,
 						"pink4": $pink4,
+						"pink5": $pink5,
 						"purple1": $purple1,
 						"purple2": $purple2,
 						"purple3": $purple3,
@@ -98,6 +100,7 @@ $theme-colors: map-merge(
 						"dark": $dark,
 						"navy": $navy,
 						"pink": $pink,
+						"pink5": $pink5,
 						"gray-300": $gray-300
 				),
 				$theme-colors

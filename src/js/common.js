@@ -25,6 +25,7 @@
 		return this.length !== 0;
 	};
 
+	var $animationScene;
 	var $carouselNavy;
 	var counterSectionRcsarTop;
 	var windowHeight;
@@ -119,6 +120,26 @@
 
 	};
 
+	var initAnimation = function() {
+		var $animation = $('.animation-scene.animation');
+		if ($animation.exists()) {
+			$animation.find('.properties-container').one('animationend', function(){
+				initNextAnimation();
+			})
+		}
+	};
+
+	var initNextAnimation = function() {
+		var $animationScene = $('.animation-scene.animation');
+		var $animationSceneNext = $animationScene.next();
+		if (!$animationSceneNext.exists()) {
+			$animationSceneNext = $('.animation-scene').first();
+		}
+		$animationScene.removeClass('animation');
+		$animationSceneNext.addClass('animation');
+		initAnimation();
+	};
+
 	$(function () {
 		var $bookADemoCarousel = $('.book-a-demo-carousel');
 		var $slickLogos = $('.slick-logos');
@@ -127,11 +148,14 @@
 		var $renCarouselSlickFirst = $('.ren-carousel-slick-first');
 		var $renCarouselSlickSecond = $('.ren-carousel-slick-second');
 
+		$animationScene = $('.animation-scene');
 		$carouselNavy = $renCarouselSlickFirst;
 
 		initGrandmother();
 		initTbcfywCarousel();
 		initSolutionCarousel();
+
+		initAnimation();
 
 		if ($renCarouselSlickFirst.exists() && $renCarouselSlickSecond.exists()) {
 			$renCarouselSlickFirst.slick({
@@ -190,6 +214,11 @@
 				speed: 5000
 			});
 		}
+	});
+
+	$(document).on('animationend', '.animation', function(){
+		var $this = $(this);
+
 	});
 
 	$(document).on('change', '.select-careers-tab', function() {

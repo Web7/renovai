@@ -31,19 +31,38 @@
 			height: 1000px
 			left: 5.09%
 			top: 429px
-			animation: ease-out 26500ms infinite forwards pillarLeftKey1600
+			animation: ease-out 26400ms infinite forwards pillarLeftKey1600
 		&-center
 			width: 318px
 			height: 1500px
 			bottom: 130px
 			right: 149px
-			animation: ease-out 26500ms infinite forwards pillarCenterKey1600
+			animation: ease-out 26400ms infinite forwards pillarCenterKey1600
 		&-right
 			width: 318px
 			height: 1000px
 			bottom: 423px
 			right: -64px
-			animation: ease-out 26500ms infinite forwards pillarRightKey1600
+			animation: ease-out 26400ms infinite forwards pillarRightKey1600
+
+	@keyframes pillarLeftKey1600scene02
+		0%
+			background-color: $purpleAnimation
+			top: 429px
+			left: 5.09%
+		95.45%
+			top: 429px
+			left: 5.09%
+			background-color: $purpleAnimation
+		100%
+			top: 387px
+			left: 6.62%
+			background-color: $pinkAnimation
+	@keyframes pillarLeftKey1600scene03
+		0%
+			top: 387px
+			left: 6.62%
+			background-color: $pinkAnimation
 
 	@keyframes pillarLeftKey1600
 		21.89%
